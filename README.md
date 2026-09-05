@@ -847,6 +847,7 @@ Four Ace to Landing Your Dream Jobs
 - [Resumebuilder](https://www.resumebuilder.com/)
 - [Enhancv](https://enhancv.com/)
 - [Resume.io](https://resume.io/)
+- [ResumeAI](https://withresumeai.com/) — free ATS checker + AI resume builder; State of ATS 2026 (738/704, Workday 37.9%)
 - [Novoresume](https://novoresume.com/)
 - [Canva](https://www.canva.com/create/resumes/)
 - [Adobe](https://www.adobe.com/express/create/resume)

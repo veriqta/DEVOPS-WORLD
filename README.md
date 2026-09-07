@@ -27,7 +27,8 @@ Start with engineering fundamentals, build practical systems, and gradually move
 
 1. Computer and operating system fundamentals. [ID: FUND-COMP-001](https://github.com/veriqta/DEVOPS-WORLD/tree/f2a3ba8347ab95f2d7d2ab5ca08faab96c8f6158/03.%20LEARNING%20RESOURCES/01.%20Computer%20Fundamentals)
 
-2. Linux
+2. Linux [ID: OS-LINUX-002](https://github.com/veriqta/DEVOPS-WORLD/tree/e74e8fd6a8e0baf3e0ffc3dbe8d988efcb6157db/03.%20LEARNING%20RESOURCES/02.%20Linux)
+
 3. Networking
 4. Git and GitHub
 5. Bash and shell scripting

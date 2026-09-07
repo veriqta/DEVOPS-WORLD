@@ -843,10 +843,10 @@ Four Ace to Landing Your Dream Jobs
 - [Resumonk](https://www.resumonk.com/)
 - [visualcv](https://www.visualcv.com/)
 - [cvmaker](https://www.cvmaker.com/)
-- [Resumegenius](https://resumegenius.com/)
+-
 - [Resumebuilder](https://www.resumebuilder.com/)
 - [Enhancv](https://enhancv.com/)
-- [Resume.io](https://resume.io/)
+
 - [Novoresume](https://novoresume.com/)
 - [Canva](https://www.canva.com/create/resumes/)
 - [Adobe](https://www.adobe.com/express/create/resume)

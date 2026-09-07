@@ -1110,32 +1110,7 @@ It should also teach you how it fails.
 
 DEVOPS WORLD includes practical handbooks covering engineering work beyond individual technologies.
 
-Topics include:
-
-* The On-Call Engineer's Handbook
-* First 90 Days as a DevOps Engineer
-* The Production Engineer's Handbook
-* The DevOps Engineer's First Production Deployment
-* The Junior DevOps Engineer's Survival Guide
-* From Junior to Mid-Level DevOps Engineer
-* From Mid-Level to Senior DevOps Engineer
-* The Senior DevOps Engineer's Handbook
-* The DevOps Engineer's First Production Incident
-* The DevOps Engineer's First Week on Call
-* The DevOps Engineer's Production Readiness Handbook
-* The DevOps Engineer's Daily Operations Handbook
-* The DevOps Engineer's Change Management Handbook
-* The DevOps Engineer's Release Day Handbook
-* The DevOps Engineer's Incident Commander Handbook
-* The DevOps Engineer's Handover Handbook
-* The DevOps Engineer's Architecture Review Handbook
-* The DevOps Engineer's First Year in Production
-* The Staff DevOps Engineer's Handbook
-* The DevOps Team Lead's Handbook
-* The Forward Deployment Engineer Handbook
-
 ---
-
 # 28. Engineering Roles
 
 DevOps is not the only infrastructure career.

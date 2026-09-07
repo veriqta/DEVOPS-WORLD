@@ -29,7 +29,8 @@ Start with engineering fundamentals, build practical systems, and gradually move
 
 2. Linux [ID: OS-LINUX-002](https://github.com/veriqta/DEVOPS-WORLD/tree/e74e8fd6a8e0baf3e0ffc3dbe8d988efcb6157db/03.%20LEARNING%20RESOURCES/02.%20Linux)
 
-3. Networking
+3. Networking [ID: FUND-COMP-001](https://github.com/veriqta/DEVOPS-WORLD/tree/da271c4cdd7dff114ecdf881e3e1b2aa3d4721b0/03.%20LEARNING%20RESOURCES/03.%20Networking)
+
 4. Git and GitHub
 5. Bash and shell scripting
 6. YAML and JSON

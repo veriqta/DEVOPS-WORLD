@@ -1263,67 +1263,6 @@ Resources may include:
 * FinOps
 * AI infrastructure
 
-Each resource should use a consistent metadata format:
-
-```text
-ID:
-Name:
-Aliases:
-Category:
-Subcategory:
-
-Official Website:
-Official Documentation:
-Official Repository:
-
-Maintainer:
-Foundation or Vendor:
-
-Open Source:
-License:
-Commercial Offering:
-Self Hosted:
-Managed:
-Free:
-Freemium:
-Paid:
-
-Status:
-Maturity:
-Last Verified:
-
-What It Is:
-What It Does:
-Why Engineers Use It:
-
-Primary Use Cases:
-Secondary Use Cases:
-
-Career Paths:
-Technical Domains:
-Technology Ecosystems:
-Production Problems:
-
-Skill Level:
-Activity Type:
-
-Alternatives:
-Integrations:
-
-Learning Resources:
-Standards:
-
-Production Notes:
-Operational Risks:
-Security Notes:
-
-Cross References:
-```
-
-The goal is not simply to list tools.
-
-The goal is to explain where technologies fit, what problems they solve, who uses them, and what engineers should understand before using them in production.
-
 ---
 
 # Learn by Problem
@@ -1454,28 +1393,6 @@ Use:
 
 ---
 
-# What DEVOPS WORLD Is Not
-
-This repository is not:
-
-* A certification dump repository
-* A collection of stolen exam questions
-* A random list of YouTube videos
-* A list of commands without explanations
-* A documentation mirror
-* A collection of outdated DevOps diagrams
-* A replacement for official documentation
-* A guarantee of employment
-* A requirement to learn every tool listed
-
-The goal is engineering understanding.
-
-Tools change.
-
-Engineering fundamentals last much longer.
-
----
-
 # How to Use This Repository
 
 If you are a beginner:
@@ -1568,20 +1485,6 @@ Resources should be reviewed periodically because tools, documentation, certific
 ---
 
 # Security
-
-Never commit:
-
-* Passwords
-* API keys
-* Access tokens
-* Private keys
-* Cloud credentials
-* Kubernetes credentials
-* `.env` files containing secrets
-* Terraform secrets
-* Production configuration containing sensitive information
-
-Use appropriate secret-management systems and follow least-privilege principles.
 
 If you discover a security issue related to this repository, follow the instructions in `SECURITY.md`.
 

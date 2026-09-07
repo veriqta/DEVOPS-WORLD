@@ -25,7 +25,8 @@ Start with engineering fundamentals, build practical systems, and gradually move
 
 ### Stage 1: Engineering Foundations
 
-1. Computer and operating system fundamentals
+1. Computer and operating system fundamentals. [ID: FUND-COMP-001](https://github.com/veriqta/DEVOPS-WORLD/tree/f2a3ba8347ab95f2d7d2ab5ca08faab96c8f6158/03.%20LEARNING%20RESOURCES/01.%20Computer%20Fundamentals)
+
 2. Linux
 3. Networking
 4. Git and GitHub

@@ -30,7 +30,7 @@ A complete learning home for DevOps, cloud engineering, site reliability enginee
 - [Data operations, backup, and disaster recovery](#data-and-recovery)
 - [AI-assisted engineering and MLOps](#ai-and-mlops)
 - [Courses, documentation, books, and hands-on learning](#learning-resources)
-- [YouTube videos, full courses, and conference talks](#videos)
+- [YouTube videos and full courses](#videos)
 - [Certifications and professional learning paths](#certifications)
 - [Hands-on projects and portfolio challenges](#projects)
 - [Foundation interview preparation](#foundation-interviews)
@@ -254,190 +254,430 @@ Use the stages as a dependency-aware guide. Revisit earlier stages as your syste
 
 ## DevOps tools: the visual atlas
 
-Find a capability, explore its tools, and open the official documentation directly from the logo or the full URL beneath it.
+Explore the tools by category. Click any logo or its **Docs ↗** label to open the official documentation.
 
-<table>
+<table width="100%">
 <tr>
-<td valign="top" width="33%"><img src="assets/categories/01.svg" width="400" alt="Version Control"><table><tr><td align="center" valign="top" width="50%"><a href="https://git-scm.com/doc"><img src="assets/tool-tiles/git.png" width="64" height="64" alt="Git logo"></a><br><strong>Git</strong><br><a href="https://git-scm.com/doc"><sub>https://git-scm.com<br>/<wbr>doc</sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.github.com/"><img src="assets/tool-tiles/github.png" width="64" height="64" alt="GitHub logo"></a><br><strong>GitHub</strong><br><a href="https://docs.github.com/"><sub>https://docs.github.com<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.gitlab.com/"><img src="assets/tool-tiles/gitlab.png" width="64" height="64" alt="GitLab logo"></a><br><strong>GitLab</strong><br><a href="https://docs.gitlab.com/"><sub>https://docs.gitlab.com<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://support.atlassian.com/bitbucket-cloud/"><img src="assets/tool-tiles/bitbucket.png" width="64" height="64" alt="Bitbucket logo"></a><br><strong>Bitbucket</strong><br><a href="https://support.atlassian.com/bitbucket-cloud/"><sub>https://support.atlassian.com<br>/<wbr>bitbucket-cloud/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.gitea.com/"><img src="assets/tool-tiles/gitea.png" width="64" height="64" alt="Gitea logo"></a><br><strong>Gitea</strong><br><a href="https://docs.gitea.com/"><sub>https://docs.gitea.com<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://forgejo.org/docs/latest/"><img src="assets/tool-tiles/forgejo.png" width="64" height="64" alt="Forgejo logo"></a><br><strong>Forgejo</strong><br><a href="https://forgejo.org/docs/latest/"><sub>https://forgejo.org<br>/<wbr>docs/<wbr>latest/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://www.mercurial-scm.org/help/commands"><img src="assets/tool-tiles/mercurial.png" width="64" height="64" alt="Mercurial logo"></a><br><strong>Mercurial</strong><br><a href="https://www.mercurial-scm.org/help/commands"><sub>https://www.mercurial-scm.org<br>/<wbr>help/<wbr>commands</sub></a></td><td align="center" valign="top" width="50%"><a href="https://subversion.apache.org/docs/"><img src="assets/tool-tiles/subversion.png" width="64" height="64" alt="Subversion logo"></a><br><strong>Subversion</strong><br><a href="https://subversion.apache.org/docs/"><sub>https://subversion.apache.org<br>/<wbr>docs/<wbr></sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/02.svg" width="400" alt="CI/CD"><table><tr><td align="center" valign="top" width="50%"><a href="https://www.jenkins.io/doc/"><img src="assets/tool-tiles/jenkins.png" width="64" height="64" alt="Jenkins logo"></a><br><strong>Jenkins</strong><br><a href="https://www.jenkins.io/doc/"><sub>https://www.jenkins.io<br>/<wbr>doc/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.github.com/en/actions"><img src="assets/tool-tiles/githubactions.png" width="64" height="64" alt="GitHub Actions logo"></a><br><strong>GitHub Actions</strong><br><a href="https://docs.github.com/en/actions"><sub>https://docs.github.com<br>/<wbr>en/<wbr>actions</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.gitlab.com/ci/"><img src="assets/tool-tiles/gitlab.png" width="64" height="64" alt="GitLab CI/CD logo"></a><br><strong>GitLab CI/CD</strong><br><a href="https://docs.gitlab.com/ci/"><sub>https://docs.gitlab.com<br>/<wbr>ci/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://circleci.com/docs/"><img src="assets/tool-tiles/circleci.png" width="64" height="64" alt="CircleCI logo"></a><br><strong>CircleCI</strong><br><a href="https://circleci.com/docs/"><sub>https://circleci.com<br>/<wbr>docs/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/"><img src="assets/tool-tiles/azuredevops.png" width="64" height="64" alt="Azure Pipelines logo"></a><br><strong>Azure Pipelines</strong><br><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/"><sub>https://learn.microsoft.com<br>/<wbr>en-us/<wbr>azure/<wbr>devops/<wbr>pipelines/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.jetbrains.com/help/teamcity/"><img src="assets/tool-tiles/teamcity.png" width="64" height="64" alt="TeamCity logo"></a><br><strong>TeamCity</strong><br><a href="https://www.jetbrains.com/help/teamcity/"><sub>https://www.jetbrains.com<br>/<wbr>help/<wbr>teamcity/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://buildkite.com/docs"><img src="assets/tool-tiles/buildkite.png" width="64" height="64" alt="Buildkite logo"></a><br><strong>Buildkite</strong><br><a href="https://buildkite.com/docs"><sub>https://buildkite.com<br>/<wbr>docs</sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.travis-ci.com/"><img src="assets/tool-tiles/travis.png" width="64" height="64" alt="Travis CI logo"></a><br><strong>Travis CI</strong><br><a href="https://docs.travis-ci.com/"><sub>https://docs.travis-ci.com<br>/<wbr></sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/03.svg" width="400" alt="Containerization"><table><tr><td align="center" valign="top" width="50%"><a href="https://docs.docker.com/"><img src="assets/tool-tiles/docker.png" width="64" height="64" alt="Docker logo"></a><br><strong>Docker</strong><br><a href="https://docs.docker.com/"><sub>https://docs.docker.com<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://containerd.io/docs/"><img src="assets/tool-tiles/containerd.png" width="64" height="64" alt="containerd logo"></a><br><strong>containerd</strong><br><a href="https://containerd.io/docs/"><sub>https://containerd.io<br>/<wbr>docs/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.podman.io/"><img src="assets/tool-tiles/podman.png" width="64" height="64" alt="Podman logo"></a><br><strong>Podman</strong><br><a href="https://docs.podman.io/"><sub>https://docs.podman.io<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://buildah.io/"><img src="assets/tool-tiles/buildah.png" width="64" height="64" alt="Buildah logo"></a><br><strong>Buildah</strong><br><a href="https://buildah.io/"><sub>https://buildah.io<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.docker.com/build/buildkit/"><img src="assets/tool-tiles/docker.png" width="64" height="64" alt="BuildKit logo"></a><br><strong>BuildKit</strong><br><a href="https://docs.docker.com/build/buildkit/"><sub>https://docs.docker.com<br>/<wbr>build/<wbr>buildkit/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://github.com/containers/skopeo/tree/main/docs"><img src="assets/tool-tiles/skopeo.png" width="64" height="64" alt="Skopeo logo"></a><br><strong>Skopeo</strong><br><a href="https://github.com/containers/skopeo/tree/main/docs"><sub>https://github.com<br>/<wbr>containers/<wbr>skopeo/<wbr>tree/<wbr>main/<wbr>docs</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://goharbor.io/docs/"><img src="assets/tool-tiles/harbor.png" width="64" height="64" alt="Harbor logo"></a><br><strong>Harbor</strong><br><a href="https://goharbor.io/docs/"><sub>https://goharbor.io<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.portainer.io/"><img src="assets/tool-tiles/portainer.png" width="64" height="64" alt="Portainer logo"></a><br><strong>Portainer</strong><br><a href="https://docs.portainer.io/"><sub>https://docs.portainer.io<br>/<wbr></sub></a></td></tr></table></td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/01.svg" width="100%" alt="Version Control"><br>
+<a href="https://git-scm.com/doc"><img src="assets/tool-cards/git.png" width="21%" alt="Git — official documentation"></a>
+<a href="https://docs.github.com/"><img src="assets/tool-cards/github.png" width="21%" alt="GitHub — official documentation"></a>
+<a href="https://docs.gitlab.com/"><img src="assets/tool-cards/gitlab.png" width="21%" alt="GitLab — official documentation"></a>
+<a href="https://support.atlassian.com/bitbucket-cloud/"><img src="assets/tool-cards/bitbucket.png" width="21%" alt="Bitbucket — official documentation"></a><br>
+<a href="https://docs.gitea.com/"><img src="assets/tool-cards/gitea.png" width="21%" alt="Gitea — official documentation"></a>
+<a href="https://forgejo.org/docs/latest/"><img src="assets/tool-cards/forgejo.png" width="21%" alt="Forgejo — official documentation"></a>
+<a href="https://www.mercurial-scm.org/help/commands"><img src="assets/tool-cards/mercurial.png" width="21%" alt="Mercurial — official documentation"></a>
+<a href="https://subversion.apache.org/docs/"><img src="assets/tool-cards/subversion.png" width="21%" alt="Subversion — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/02.svg" width="100%" alt="CI/CD"><br>
+<a href="https://www.jenkins.io/doc/"><img src="assets/tool-cards/jenkins.png" width="21%" alt="Jenkins — official documentation"></a>
+<a href="https://docs.github.com/en/actions"><img src="assets/tool-cards/github-actions.png" width="21%" alt="GitHub Actions — official documentation"></a>
+<a href="https://docs.gitlab.com/ci/"><img src="assets/tool-cards/gitlab-ci-cd.png" width="21%" alt="GitLab CI/CD — official documentation"></a>
+<a href="https://circleci.com/docs/"><img src="assets/tool-cards/circleci.png" width="21%" alt="CircleCI — official documentation"></a><br>
+<a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/"><img src="assets/tool-cards/azure-pipelines.png" width="21%" alt="Azure Pipelines — official documentation"></a>
+<a href="https://www.jetbrains.com/help/teamcity/"><img src="assets/tool-cards/teamcity.png" width="21%" alt="TeamCity — official documentation"></a>
+<a href="https://buildkite.com/docs"><img src="assets/tool-cards/buildkite.png" width="21%" alt="Buildkite — official documentation"></a>
+<a href="https://docs.travis-ci.com/"><img src="assets/tool-cards/travis-ci.png" width="21%" alt="Travis CI — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/03.svg" width="100%" alt="Containerization"><br>
+<a href="https://docs.docker.com/"><img src="assets/tool-cards/docker.png" width="21%" alt="Docker — official documentation"></a>
+<a href="https://containerd.io/docs/"><img src="assets/tool-cards/containerd.png" width="21%" alt="containerd — official documentation"></a>
+<a href="https://docs.podman.io/"><img src="assets/tool-cards/podman.png" width="21%" alt="Podman — official documentation"></a>
+<a href="https://buildah.io/"><img src="assets/tool-cards/buildah.png" width="21%" alt="Buildah — official documentation"></a><br>
+<a href="https://docs.docker.com/build/buildkit/"><img src="assets/tool-cards/buildkit.png" width="21%" alt="BuildKit — official documentation"></a>
+<a href="https://github.com/containers/skopeo/tree/main/docs"><img src="assets/tool-cards/skopeo.png" width="21%" alt="Skopeo — official documentation"></a>
+<a href="https://goharbor.io/docs/"><img src="assets/tool-cards/harbor.png" width="21%" alt="Harbor — official documentation"></a>
+<a href="https://docs.portainer.io/"><img src="assets/tool-cards/portainer.png" width="21%" alt="Portainer — official documentation"></a><br>
+</td>
 </tr>
 <tr>
-<td valign="top" width="33%"><img src="assets/categories/04.svg" width="400" alt="Orchestration"><table><tr><td align="center" valign="top" width="50%"><a href="https://kubernetes.io/docs/"><img src="assets/tool-tiles/kubernetes.png" width="64" height="64" alt="Kubernetes logo"></a><br><strong>Kubernetes</strong><br><a href="https://kubernetes.io/docs/"><sub>https://kubernetes.io<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.redhat.com/en/documentation/openshift_container_platform"><img src="assets/tool-tiles/redhat.png" width="64" height="64" alt="OpenShift logo"></a><br><strong>OpenShift</strong><br><a href="https://docs.redhat.com/en/documentation/openshift_container_platform"><sub>https://docs.redhat.com<br>/<wbr>en/<wbr>documentation/<wbr>openshift_container_platform</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://ranchermanager.docs.rancher.com/"><img src="assets/tool-tiles/rancher.png" width="64" height="64" alt="Rancher logo"></a><br><strong>Rancher</strong><br><a href="https://ranchermanager.docs.rancher.com/"><sub>https://ranchermanager.docs.rancher.com<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://developer.hashicorp.com/nomad/docs"><img src="assets/tool-tiles/nomad.png" width="64" height="64" alt="Nomad logo"></a><br><strong>Nomad</strong><br><a href="https://developer.hashicorp.com/nomad/docs"><sub>https://developer.hashicorp.com<br>/<wbr>nomad/<wbr>docs</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.k3s.io/"><img src="assets/tool-tiles/k3s.png" width="64" height="64" alt="K3s logo"></a><br><strong>K3s</strong><br><a href="https://docs.k3s.io/"><sub>https://docs.k3s.io<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://helm.sh/docs/"><img src="assets/tool-tiles/helm.png" width="64" height="64" alt="Helm logo"></a><br><strong>Helm</strong><br><a href="https://helm.sh/docs/"><sub>https://helm.sh<br>/<wbr>docs/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.docker.com/engine/swarm/"><img src="assets/tool-tiles/docker.png" width="64" height="64" alt="Docker Swarm logo"></a><br><strong>Docker Swarm</strong><br><a href="https://docs.docker.com/engine/swarm/"><sub>https://docs.docker.com<br>/<wbr>engine/<wbr>swarm/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.talos.dev/"><img src="assets/tool-tiles/talos.png" width="64" height="64" alt="Talos Linux logo"></a><br><strong>Talos Linux</strong><br><a href="https://www.talos.dev/"><sub>https://www.talos.dev<br>/<wbr></sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/05.svg" width="400" alt="Infrastructure as Code"><table><tr><td align="center" valign="top" width="50%"><a href="https://developer.hashicorp.com/terraform/docs"><img src="assets/tool-tiles/terraform.png" width="64" height="64" alt="Terraform logo"></a><br><strong>Terraform</strong><br><a href="https://developer.hashicorp.com/terraform/docs"><sub>https://developer.hashicorp.com<br>/<wbr>terraform/<wbr>docs</sub></a></td><td align="center" valign="top" width="50%"><a href="https://opentofu.org/docs/"><img src="assets/tool-tiles/opentofu.png" width="64" height="64" alt="OpenTofu logo"></a><br><strong>OpenTofu</strong><br><a href="https://opentofu.org/docs/"><sub>https://opentofu.org<br>/<wbr>docs/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://www.pulumi.com/docs/"><img src="assets/tool-tiles/pulumi.png" width="64" height="64" alt="Pulumi logo"></a><br><strong>Pulumi</strong><br><a href="https://www.pulumi.com/docs/"><sub>https://www.pulumi.com<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.aws.amazon.com/cloudformation/"><img src="assets/tool-tiles/amazonwebservices.png" width="64" height="64" alt="CloudFormation logo"></a><br><strong>CloudFormation</strong><br><a href="https://docs.aws.amazon.com/cloudformation/"><sub>https://docs.aws.amazon.com<br>/<wbr>cloudformation/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://developer.hashicorp.com/packer/docs"><img src="assets/tool-tiles/packer.png" width="64" height="64" alt="Packer logo"></a><br><strong>Packer</strong><br><a href="https://developer.hashicorp.com/packer/docs"><sub>https://developer.hashicorp.com<br>/<wbr>packer/<wbr>docs</sub></a></td><td align="center" valign="top" width="50%"><a href="https://developer.hashicorp.com/vagrant/docs"><img src="assets/tool-tiles/vagrant.png" width="64" height="64" alt="Vagrant logo"></a><br><strong>Vagrant</strong><br><a href="https://developer.hashicorp.com/vagrant/docs"><sub>https://developer.hashicorp.com<br>/<wbr>vagrant/<wbr>docs</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.crossplane.io/"><img src="assets/tool-tiles/crossplane.png" width="64" height="64" alt="Crossplane logo"></a><br><strong>Crossplane</strong><br><a href="https://docs.crossplane.io/"><sub>https://docs.crossplane.io<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://terramate.io/docs/"><img src="assets/tool-tiles/terramate.png" width="64" height="64" alt="Terramate logo"></a><br><strong>Terramate</strong><br><a href="https://terramate.io/docs/"><sub>https://terramate.io<br>/<wbr>docs/<wbr></sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/06.svg" width="400" alt="Configuration Management"><table><tr><td align="center" valign="top" width="50%"><a href="https://docs.ansible.com/"><img src="assets/tool-tiles/ansible.png" width="64" height="64" alt="Ansible logo"></a><br><strong>Ansible</strong><br><a href="https://docs.ansible.com/"><sub>https://docs.ansible.com<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.chef.io/"><img src="assets/tool-tiles/chef.png" width="64" height="64" alt="Chef logo"></a><br><strong>Chef</strong><br><a href="https://docs.chef.io/"><sub>https://docs.chef.io<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://www.puppet.com/docs"><img src="assets/tool-tiles/puppet.png" width="64" height="64" alt="Puppet logo"></a><br><strong>Puppet</strong><br><a href="https://www.puppet.com/docs"><sub>https://www.puppet.com<br>/<wbr>docs</sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.saltproject.io/"><img src="assets/tool-tiles/saltproject.png" width="64" height="64" alt="Salt logo"></a><br><strong>Salt</strong><br><a href="https://docs.saltproject.io/"><sub>https://docs.saltproject.io<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://ansible.readthedocs.io/projects/awx/en/latest/"><img src="assets/tool-tiles/ansible.png" width="64" height="64" alt="AWX logo"></a><br><strong>AWX</strong><br><a href="https://ansible.readthedocs.io/projects/awx/en/latest/"><sub>https://ansible.readthedocs.io<br>/<wbr>projects/<wbr>awx/<wbr>en/<wbr>latest/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.cfengine.com/"><img src="assets/tool-tiles/cfengine.png" width="64" height="64" alt="CFEngine logo"></a><br><strong>CFEngine</strong><br><a href="https://docs.cfengine.com/"><sub>https://docs.cfengine.com<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://nixos.org/manual/nixos/stable/"><img src="assets/tool-tiles/nixos.png" width="64" height="64" alt="NixOS logo"></a><br><strong>NixOS</strong><br><a href="https://nixos.org/manual/nixos/stable/"><sub>https://nixos.org<br>/<wbr>manual/<wbr>nixos/<wbr>stable/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://learn.microsoft.com/en-us/powershell/dsc/overview"><img src="assets/tool-tiles/powershell.png" width="64" height="64" alt="PowerShell DSC logo"></a><br><strong>PowerShell DSC</strong><br><a href="https://learn.microsoft.com/en-us/powershell/dsc/overview"><sub>https://learn.microsoft.com<br>/<wbr>en-us/<wbr>powershell/<wbr>dsc/<wbr>overview</sub></a></td></tr></table></td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/04.svg" width="100%" alt="Orchestration"><br>
+<a href="https://kubernetes.io/docs/"><img src="assets/tool-cards/kubernetes.png" width="21%" alt="Kubernetes — official documentation"></a>
+<a href="https://docs.redhat.com/en/documentation/openshift_container_platform"><img src="assets/tool-cards/openshift.png" width="21%" alt="OpenShift — official documentation"></a>
+<a href="https://ranchermanager.docs.rancher.com/"><img src="assets/tool-cards/rancher.png" width="21%" alt="Rancher — official documentation"></a>
+<a href="https://developer.hashicorp.com/nomad/docs"><img src="assets/tool-cards/nomad.png" width="21%" alt="Nomad — official documentation"></a><br>
+<a href="https://docs.k3s.io/"><img src="assets/tool-cards/k3s.png" width="21%" alt="K3s — official documentation"></a>
+<a href="https://helm.sh/docs/"><img src="assets/tool-cards/helm.png" width="21%" alt="Helm — official documentation"></a>
+<a href="https://docs.docker.com/engine/swarm/"><img src="assets/tool-cards/docker-swarm.png" width="21%" alt="Docker Swarm — official documentation"></a>
+<a href="https://www.talos.dev/"><img src="assets/tool-cards/talos-linux.png" width="21%" alt="Talos Linux — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/05.svg" width="100%" alt="Infrastructure as Code"><br>
+<a href="https://developer.hashicorp.com/terraform/docs"><img src="assets/tool-cards/terraform.png" width="21%" alt="Terraform — official documentation"></a>
+<a href="https://opentofu.org/docs/"><img src="assets/tool-cards/opentofu.png" width="21%" alt="OpenTofu — official documentation"></a>
+<a href="https://www.pulumi.com/docs/"><img src="assets/tool-cards/pulumi.png" width="21%" alt="Pulumi — official documentation"></a>
+<a href="https://docs.aws.amazon.com/cloudformation/"><img src="assets/tool-cards/cloudformation.png" width="21%" alt="CloudFormation — official documentation"></a><br>
+<a href="https://developer.hashicorp.com/packer/docs"><img src="assets/tool-cards/packer.png" width="21%" alt="Packer — official documentation"></a>
+<a href="https://developer.hashicorp.com/vagrant/docs"><img src="assets/tool-cards/vagrant.png" width="21%" alt="Vagrant — official documentation"></a>
+<a href="https://docs.crossplane.io/"><img src="assets/tool-cards/crossplane.png" width="21%" alt="Crossplane — official documentation"></a>
+<a href="https://terramate.io/docs/"><img src="assets/tool-cards/terramate.png" width="21%" alt="Terramate — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/06.svg" width="100%" alt="Configuration Management"><br>
+<a href="https://docs.ansible.com/"><img src="assets/tool-cards/ansible.png" width="21%" alt="Ansible — official documentation"></a>
+<a href="https://docs.chef.io/"><img src="assets/tool-cards/chef.png" width="21%" alt="Chef — official documentation"></a>
+<a href="https://www.puppet.com/docs"><img src="assets/tool-cards/puppet.png" width="21%" alt="Puppet — official documentation"></a>
+<a href="https://docs.saltproject.io/"><img src="assets/tool-cards/salt.png" width="21%" alt="Salt — official documentation"></a><br>
+<a href="https://ansible.readthedocs.io/projects/awx/en/latest/"><img src="assets/tool-cards/awx.png" width="21%" alt="AWX — official documentation"></a>
+<a href="https://docs.cfengine.com/"><img src="assets/tool-cards/cfengine.png" width="21%" alt="CFEngine — official documentation"></a>
+<a href="https://nixos.org/manual/nixos/stable/"><img src="assets/tool-cards/nixos.png" width="21%" alt="NixOS — official documentation"></a>
+<a href="https://learn.microsoft.com/en-us/powershell/dsc/overview"><img src="assets/tool-cards/powershell-dsc.png" width="21%" alt="PowerShell DSC — official documentation"></a><br>
+</td>
 </tr>
 <tr>
-<td valign="top" width="33%"><img src="assets/categories/07.svg" width="400" alt="Cloud Platforms"><table><tr><td align="center" valign="top" width="50%"><a href="https://docs.aws.amazon.com/"><img src="assets/tool-tiles/amazonwebservices.png" width="64" height="64" alt="AWS logo"></a><br><strong>AWS</strong><br><a href="https://docs.aws.amazon.com/"><sub>https://docs.aws.amazon.com<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://learn.microsoft.com/en-us/azure/"><img src="assets/tool-tiles/azure.png" width="64" height="64" alt="Microsoft Azure logo"></a><br><strong>Microsoft Azure</strong><br><a href="https://learn.microsoft.com/en-us/azure/"><sub>https://learn.microsoft.com<br>/<wbr>en-us/<wbr>azure/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://cloud.google.com/docs"><img src="assets/tool-tiles/googlecloud.png" width="64" height="64" alt="Google Cloud logo"></a><br><strong>Google Cloud</strong><br><a href="https://cloud.google.com/docs"><sub>https://cloud.google.com<br>/<wbr>docs</sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.oracle.com/en-us/iaas/Content/home.htm"><img src="assets/tool-tiles/oracle.png" width="64" height="64" alt="Oracle Cloud logo"></a><br><strong>Oracle Cloud</strong><br><a href="https://docs.oracle.com/en-us/iaas/Content/home.htm"><sub>https://docs.oracle.com<br>/<wbr>en-us/<wbr>iaas/<wbr>Content/<wbr>home.htm</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.digitalocean.com/"><img src="assets/tool-tiles/digitalocean.png" width="64" height="64" alt="DigitalOcean logo"></a><br><strong>DigitalOcean</strong><br><a href="https://docs.digitalocean.com/"><sub>https://docs.digitalocean.com<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://cloud.ibm.com/docs"><img src="assets/tool-tiles/ibm.png" width="64" height="64" alt="IBM Cloud logo"></a><br><strong>IBM Cloud</strong><br><a href="https://cloud.ibm.com/docs"><sub>https://cloud.ibm.com<br>/<wbr>docs</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://www.alibabacloud.com/help/"><img src="assets/tool-tiles/alibabacloud.png" width="64" height="64" alt="Alibaba Cloud logo"></a><br><strong>Alibaba Cloud</strong><br><a href="https://www.alibabacloud.com/help/"><sub>https://www.alibabacloud.com<br>/<wbr>help/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.hetzner.com/"><img src="assets/tool-tiles/hetzner.png" width="64" height="64" alt="Hetzner logo"></a><br><strong>Hetzner</strong><br><a href="https://docs.hetzner.com/"><sub>https://docs.hetzner.com<br>/<wbr></sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/08.svg" width="400" alt="Monitoring and Observability"><table><tr><td align="center" valign="top" width="50%"><a href="https://prometheus.io/docs/"><img src="assets/tool-tiles/prometheus.png" width="64" height="64" alt="Prometheus logo"></a><br><strong>Prometheus</strong><br><a href="https://prometheus.io/docs/"><sub>https://prometheus.io<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://grafana.com/docs/"><img src="assets/tool-tiles/grafana.png" width="64" height="64" alt="Grafana logo"></a><br><strong>Grafana</strong><br><a href="https://grafana.com/docs/"><sub>https://grafana.com<br>/<wbr>docs/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.datadoghq.com/"><img src="assets/tool-tiles/datadog.png" width="64" height="64" alt="Datadog logo"></a><br><strong>Datadog</strong><br><a href="https://docs.datadoghq.com/"><sub>https://docs.datadoghq.com<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.newrelic.com/"><img src="assets/tool-tiles/newrelic.png" width="64" height="64" alt="New Relic logo"></a><br><strong>New Relic</strong><br><a href="https://docs.newrelic.com/"><sub>https://docs.newrelic.com<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://opentelemetry.io/docs/"><img src="assets/tool-tiles/opentelemetry.png" width="64" height="64" alt="OpenTelemetry logo"></a><br><strong>OpenTelemetry</strong><br><a href="https://opentelemetry.io/docs/"><sub>https://opentelemetry.io<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.jaegertracing.io/docs/"><img src="assets/tool-tiles/jaegertracing.png" width="64" height="64" alt="Jaeger logo"></a><br><strong>Jaeger</strong><br><a href="https://www.jaegertracing.io/docs/"><sub>https://www.jaegertracing.io<br>/<wbr>docs/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.dynatrace.com/"><img src="assets/tool-tiles/dynatrace.png" width="64" height="64" alt="Dynatrace logo"></a><br><strong>Dynatrace</strong><br><a href="https://docs.dynatrace.com/"><sub>https://docs.dynatrace.com<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.zabbix.com/documentation/current/en/manual"><img src="assets/tool-tiles/zabbix.png" width="64" height="64" alt="Zabbix logo"></a><br><strong>Zabbix</strong><br><a href="https://www.zabbix.com/documentation/current/en/manual"><sub>https://www.zabbix.com<br>/<wbr>documentation/<wbr>current/<wbr>en/<wbr>manual</sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/09.svg" width="400" alt="Logging"><table><tr><td align="center" valign="top" width="50%"><a href="https://www.elastic.co/docs"><img src="assets/tool-tiles/elasticsearch.png" width="64" height="64" alt="Elasticsearch logo"></a><br><strong>Elasticsearch</strong><br><a href="https://www.elastic.co/docs"><sub>https://www.elastic.co<br>/<wbr>docs</sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.elastic.co/docs/reference/logstash"><img src="assets/tool-tiles/logstash.png" width="64" height="64" alt="Logstash logo"></a><br><strong>Logstash</strong><br><a href="https://www.elastic.co/docs/reference/logstash"><sub>https://www.elastic.co<br>/<wbr>docs/<wbr>reference/<wbr>logstash</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://www.elastic.co/docs/explore-analyze"><img src="assets/tool-tiles/kibana.png" width="64" height="64" alt="Kibana logo"></a><br><strong>Kibana</strong><br><a href="https://www.elastic.co/docs/explore-analyze"><sub>https://www.elastic.co<br>/<wbr>docs/<wbr>explore-analyze</sub></a></td><td align="center" valign="top" width="50%"><a href="https://grafana.com/docs/loki/latest/"><img src="assets/tool-tiles/grafanaloki.png" width="64" height="64" alt="Loki logo"></a><br><strong>Loki</strong><br><a href="https://grafana.com/docs/loki/latest/"><sub>https://grafana.com<br>/<wbr>docs/<wbr>loki/<wbr>latest/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.fluentd.org/"><img src="assets/tool-tiles/fluentd.png" width="64" height="64" alt="Fluentd logo"></a><br><strong>Fluentd</strong><br><a href="https://docs.fluentd.org/"><sub>https://docs.fluentd.org<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.fluentbit.io/"><img src="assets/tool-tiles/fluentbit.png" width="64" height="64" alt="Fluent Bit logo"></a><br><strong>Fluent Bit</strong><br><a href="https://docs.fluentbit.io/"><sub>https://docs.fluentbit.io<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.splunk.com/"><img src="assets/tool-tiles/splunk.png" width="64" height="64" alt="Splunk logo"></a><br><strong>Splunk</strong><br><a href="https://docs.splunk.com/"><sub>https://docs.splunk.com<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.elastic.co/docs/reference/beats"><img src="assets/tool-tiles/beats.png" width="64" height="64" alt="Elastic Beats logo"></a><br><strong>Elastic Beats</strong><br><a href="https://www.elastic.co/docs/reference/beats"><sub>https://www.elastic.co<br>/<wbr>docs/<wbr>reference/<wbr>beats</sub></a></td></tr></table></td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/07.svg" width="100%" alt="Cloud Platforms"><br>
+<a href="https://docs.aws.amazon.com/"><img src="assets/tool-cards/aws.png" width="21%" alt="AWS — official documentation"></a>
+<a href="https://learn.microsoft.com/en-us/azure/"><img src="assets/tool-cards/microsoft-azure.png" width="21%" alt="Microsoft Azure — official documentation"></a>
+<a href="https://cloud.google.com/docs"><img src="assets/tool-cards/google-cloud.png" width="21%" alt="Google Cloud — official documentation"></a>
+<a href="https://docs.oracle.com/en-us/iaas/Content/home.htm"><img src="assets/tool-cards/oracle-cloud.png" width="21%" alt="Oracle Cloud — official documentation"></a><br>
+<a href="https://docs.digitalocean.com/"><img src="assets/tool-cards/digitalocean.png" width="21%" alt="DigitalOcean — official documentation"></a>
+<a href="https://cloud.ibm.com/docs"><img src="assets/tool-cards/ibm-cloud.png" width="21%" alt="IBM Cloud — official documentation"></a>
+<a href="https://www.alibabacloud.com/help/"><img src="assets/tool-cards/alibaba-cloud.png" width="21%" alt="Alibaba Cloud — official documentation"></a>
+<a href="https://docs.hetzner.com/"><img src="assets/tool-cards/hetzner.png" width="21%" alt="Hetzner — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/08.svg" width="100%" alt="Monitoring and Observability"><br>
+<a href="https://prometheus.io/docs/"><img src="assets/tool-cards/prometheus.png" width="21%" alt="Prometheus — official documentation"></a>
+<a href="https://grafana.com/docs/"><img src="assets/tool-cards/grafana.png" width="21%" alt="Grafana — official documentation"></a>
+<a href="https://docs.datadoghq.com/"><img src="assets/tool-cards/datadog.png" width="21%" alt="Datadog — official documentation"></a>
+<a href="https://docs.newrelic.com/"><img src="assets/tool-cards/new-relic.png" width="21%" alt="New Relic — official documentation"></a><br>
+<a href="https://opentelemetry.io/docs/"><img src="assets/tool-cards/opentelemetry.png" width="21%" alt="OpenTelemetry — official documentation"></a>
+<a href="https://www.jaegertracing.io/docs/"><img src="assets/tool-cards/jaeger.png" width="21%" alt="Jaeger — official documentation"></a>
+<a href="https://docs.dynatrace.com/"><img src="assets/tool-cards/dynatrace.png" width="21%" alt="Dynatrace — official documentation"></a>
+<a href="https://www.zabbix.com/documentation/current/en/manual"><img src="assets/tool-cards/zabbix.png" width="21%" alt="Zabbix — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/09.svg" width="100%" alt="Logging"><br>
+<a href="https://www.elastic.co/docs"><img src="assets/tool-cards/elasticsearch.png" width="21%" alt="Elasticsearch — official documentation"></a>
+<a href="https://www.elastic.co/docs/reference/logstash"><img src="assets/tool-cards/logstash.png" width="21%" alt="Logstash — official documentation"></a>
+<a href="https://www.elastic.co/docs/explore-analyze"><img src="assets/tool-cards/kibana.png" width="21%" alt="Kibana — official documentation"></a>
+<a href="https://grafana.com/docs/loki/latest/"><img src="assets/tool-cards/loki.png" width="21%" alt="Loki — official documentation"></a><br>
+<a href="https://docs.fluentd.org/"><img src="assets/tool-cards/fluentd.png" width="21%" alt="Fluentd — official documentation"></a>
+<a href="https://docs.fluentbit.io/"><img src="assets/tool-cards/fluent-bit.png" width="21%" alt="Fluent Bit — official documentation"></a>
+<a href="https://docs.splunk.com/"><img src="assets/tool-cards/splunk.png" width="21%" alt="Splunk — official documentation"></a>
+<a href="https://www.elastic.co/docs/reference/beats"><img src="assets/tool-cards/elastic-beats.png" width="21%" alt="Elastic Beats — official documentation"></a><br>
+</td>
 </tr>
 <tr>
-<td valign="top" width="33%"><img src="assets/categories/10.svg" width="400" alt="Networking and Ingress"><table><tr><td align="center" valign="top" width="50%"><a href="https://nginx.org/en/docs/"><img src="assets/tool-tiles/nginx.png" width="64" height="64" alt="NGINX logo"></a><br><strong>NGINX</strong><br><a href="https://nginx.org/en/docs/"><sub>https://nginx.org<br>/<wbr>en/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.haproxy.org/#docs"><img src="assets/tool-tiles/haproxy.png" width="64" height="64" alt="HAProxy logo"></a><br><strong>HAProxy</strong><br><a href="https://www.haproxy.org/#docs"><sub>https://www.haproxy.org<br>/<wbr>#docs</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://doc.traefik.io/traefik/"><img src="assets/tool-tiles/traefikproxy.png" width="64" height="64" alt="Traefik logo"></a><br><strong>Traefik</strong><br><a href="https://doc.traefik.io/traefik/"><sub>https://doc.traefik.io<br>/<wbr>traefik/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.cilium.io/"><img src="assets/tool-tiles/cilium.png" width="64" height="64" alt="Cilium logo"></a><br><strong>Cilium</strong><br><a href="https://docs.cilium.io/"><sub>https://docs.cilium.io<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.tigera.io/calico/latest/about"><img src="assets/tool-tiles/calico.png" width="64" height="64" alt="Calico logo"></a><br><strong>Calico</strong><br><a href="https://docs.tigera.io/calico/latest/about"><sub>https://docs.tigera.io<br>/<wbr>calico/<wbr>latest/<wbr>about</sub></a></td><td align="center" valign="top" width="50%"><a href="https://coredns.io/manual/toc/"><img src="assets/tool-tiles/coredns.png" width="64" height="64" alt="CoreDNS logo"></a><br><strong>CoreDNS</strong><br><a href="https://coredns.io/manual/toc/"><sub>https://coredns.io<br>/<wbr>manual/<wbr>toc/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://developers.cloudflare.com/"><img src="assets/tool-tiles/cloudflare.png" width="64" height="64" alt="Cloudflare logo"></a><br><strong>Cloudflare</strong><br><a href="https://developers.cloudflare.com/"><sub>https://developers.cloudflare.com<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.wireguard.com/quickstart/"><img src="assets/tool-tiles/wireguard.png" width="64" height="64" alt="WireGuard logo"></a><br><strong>WireGuard</strong><br><a href="https://www.wireguard.com/quickstart/"><sub>https://www.wireguard.com<br>/<wbr>quickstart/<wbr></sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/11.svg" width="400" alt="Service Mesh and Traffic"><table><tr><td align="center" valign="top" width="50%"><a href="https://istio.io/latest/docs/"><img src="assets/tool-tiles/istio.png" width="64" height="64" alt="Istio logo"></a><br><strong>Istio</strong><br><a href="https://istio.io/latest/docs/"><sub>https://istio.io<br>/<wbr>latest/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://linkerd.io/2/overview/"><img src="assets/tool-tiles/linkerd.png" width="64" height="64" alt="Linkerd logo"></a><br><strong>Linkerd</strong><br><a href="https://linkerd.io/2/overview/"><sub>https://linkerd.io<br>/<wbr>2/<wbr>overview/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://developer.hashicorp.com/consul/docs"><img src="assets/tool-tiles/consul.png" width="64" height="64" alt="Consul logo"></a><br><strong>Consul</strong><br><a href="https://developer.hashicorp.com/consul/docs"><sub>https://developer.hashicorp.com<br>/<wbr>consul/<wbr>docs</sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.envoyproxy.io/docs"><img src="assets/tool-tiles/envoy.png" width="64" height="64" alt="Envoy logo"></a><br><strong>Envoy</strong><br><a href="https://www.envoyproxy.io/docs"><sub>https://www.envoyproxy.io<br>/<wbr>docs</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://kuma.io/docs/"><img src="assets/tool-tiles/kuma.png" width="64" height="64" alt="Kuma logo"></a><br><strong>Kuma</strong><br><a href="https://kuma.io/docs/"><sub>https://kuma.io<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://developer.konghq.com/gateway/"><img src="assets/tool-tiles/kong.png" width="64" height="64" alt="Kong Gateway logo"></a><br><strong>Kong Gateway</strong><br><a href="https://developer.konghq.com/gateway/"><sub>https://developer.konghq.com<br>/<wbr>gateway/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://gateway.envoyproxy.io/docs/"><img src="assets/tool-tiles/envoy.png" width="64" height="64" alt="Envoy Gateway logo"></a><br><strong>Envoy Gateway</strong><br><a href="https://gateway.envoyproxy.io/docs/"><sub>https://gateway.envoyproxy.io<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://cert-manager.io/docs/"><img src="assets/tool-tiles/certmanager.png" width="64" height="64" alt="cert-manager logo"></a><br><strong>cert-manager</strong><br><a href="https://cert-manager.io/docs/"><sub>https://cert-manager.io<br>/<wbr>docs/<wbr></sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/12.svg" width="400" alt="Databases and Data Stores"><table><tr><td align="center" valign="top" width="50%"><a href="https://www.postgresql.org/docs/"><img src="assets/tool-tiles/postgresql.png" width="64" height="64" alt="PostgreSQL logo"></a><br><strong>PostgreSQL</strong><br><a href="https://www.postgresql.org/docs/"><sub>https://www.postgresql.org<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://dev.mysql.com/doc/"><img src="assets/tool-tiles/mysql.png" width="64" height="64" alt="MySQL logo"></a><br><strong>MySQL</strong><br><a href="https://dev.mysql.com/doc/"><sub>https://dev.mysql.com<br>/<wbr>doc/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://www.mongodb.com/docs/"><img src="assets/tool-tiles/mongodb.png" width="64" height="64" alt="MongoDB logo"></a><br><strong>MongoDB</strong><br><a href="https://www.mongodb.com/docs/"><sub>https://www.mongodb.com<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://redis.io/docs/latest/"><img src="assets/tool-tiles/redis.png" width="64" height="64" alt="Redis logo"></a><br><strong>Redis</strong><br><a href="https://redis.io/docs/latest/"><sub>https://redis.io<br>/<wbr>docs/<wbr>latest/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://cassandra.apache.org/doc/latest/"><img src="assets/tool-tiles/cassandra.png" width="64" height="64" alt="Cassandra logo"></a><br><strong>Cassandra</strong><br><a href="https://cassandra.apache.org/doc/latest/"><sub>https://cassandra.apache.org<br>/<wbr>doc/<wbr>latest/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://mariadb.com/docs/"><img src="assets/tool-tiles/mariadb.png" width="64" height="64" alt="MariaDB logo"></a><br><strong>MariaDB</strong><br><a href="https://mariadb.com/docs/"><sub>https://mariadb.com<br>/<wbr>docs/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://www.sqlite.org/docs.html"><img src="assets/tool-tiles/sqlite.png" width="64" height="64" alt="SQLite logo"></a><br><strong>SQLite</strong><br><a href="https://www.sqlite.org/docs.html"><sub>https://www.sqlite.org<br>/<wbr>docs.html</sub></a></td><td align="center" valign="top" width="50%"><a href="https://clickhouse.com/docs"><img src="assets/tool-tiles/clickhouse.png" width="64" height="64" alt="ClickHouse logo"></a><br><strong>ClickHouse</strong><br><a href="https://clickhouse.com/docs"><sub>https://clickhouse.com<br>/<wbr>docs</sub></a></td></tr></table></td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/10.svg" width="100%" alt="Networking and Ingress"><br>
+<a href="https://nginx.org/en/docs/"><img src="assets/tool-cards/nginx.png" width="21%" alt="NGINX — official documentation"></a>
+<a href="https://www.haproxy.org/#docs"><img src="assets/tool-cards/haproxy.png" width="21%" alt="HAProxy — official documentation"></a>
+<a href="https://doc.traefik.io/traefik/"><img src="assets/tool-cards/traefik.png" width="21%" alt="Traefik — official documentation"></a>
+<a href="https://docs.cilium.io/"><img src="assets/tool-cards/cilium.png" width="21%" alt="Cilium — official documentation"></a><br>
+<a href="https://docs.tigera.io/calico/latest/about"><img src="assets/tool-cards/calico.png" width="21%" alt="Calico — official documentation"></a>
+<a href="https://coredns.io/manual/toc/"><img src="assets/tool-cards/coredns.png" width="21%" alt="CoreDNS — official documentation"></a>
+<a href="https://developers.cloudflare.com/"><img src="assets/tool-cards/cloudflare.png" width="21%" alt="Cloudflare — official documentation"></a>
+<a href="https://www.wireguard.com/quickstart/"><img src="assets/tool-cards/wireguard.png" width="21%" alt="WireGuard — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/11.svg" width="100%" alt="Service Mesh and Traffic"><br>
+<a href="https://istio.io/latest/docs/"><img src="assets/tool-cards/istio.png" width="21%" alt="Istio — official documentation"></a>
+<a href="https://linkerd.io/2/overview/"><img src="assets/tool-cards/linkerd.png" width="21%" alt="Linkerd — official documentation"></a>
+<a href="https://developer.hashicorp.com/consul/docs"><img src="assets/tool-cards/consul.png" width="21%" alt="Consul — official documentation"></a>
+<a href="https://www.envoyproxy.io/docs"><img src="assets/tool-cards/envoy.png" width="21%" alt="Envoy — official documentation"></a><br>
+<a href="https://kuma.io/docs/"><img src="assets/tool-cards/kuma.png" width="21%" alt="Kuma — official documentation"></a>
+<a href="https://developer.konghq.com/gateway/"><img src="assets/tool-cards/kong-gateway.png" width="21%" alt="Kong Gateway — official documentation"></a>
+<a href="https://gateway.envoyproxy.io/docs/"><img src="assets/tool-cards/envoy-gateway.png" width="21%" alt="Envoy Gateway — official documentation"></a>
+<a href="https://cert-manager.io/docs/"><img src="assets/tool-cards/cert-manager.png" width="21%" alt="cert-manager — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/12.svg" width="100%" alt="Databases and Data Stores"><br>
+<a href="https://www.postgresql.org/docs/"><img src="assets/tool-cards/postgresql.png" width="21%" alt="PostgreSQL — official documentation"></a>
+<a href="https://dev.mysql.com/doc/"><img src="assets/tool-cards/mysql.png" width="21%" alt="MySQL — official documentation"></a>
+<a href="https://www.mongodb.com/docs/"><img src="assets/tool-cards/mongodb.png" width="21%" alt="MongoDB — official documentation"></a>
+<a href="https://redis.io/docs/latest/"><img src="assets/tool-cards/redis.png" width="21%" alt="Redis — official documentation"></a><br>
+<a href="https://cassandra.apache.org/doc/latest/"><img src="assets/tool-cards/cassandra.png" width="21%" alt="Cassandra — official documentation"></a>
+<a href="https://mariadb.com/docs/"><img src="assets/tool-cards/mariadb.png" width="21%" alt="MariaDB — official documentation"></a>
+<a href="https://www.sqlite.org/docs.html"><img src="assets/tool-cards/sqlite.png" width="21%" alt="SQLite — official documentation"></a>
+<a href="https://clickhouse.com/docs"><img src="assets/tool-cards/clickhouse.png" width="21%" alt="ClickHouse — official documentation"></a><br>
+</td>
 </tr>
 <tr>
-<td valign="top" width="33%"><img src="assets/categories/13.svg" width="400" alt="Queues and Streaming"><table><tr><td align="center" valign="top" width="50%"><a href="https://www.rabbitmq.com/docs"><img src="assets/tool-tiles/rabbitmq.png" width="64" height="64" alt="RabbitMQ logo"></a><br><strong>RabbitMQ</strong><br><a href="https://www.rabbitmq.com/docs"><sub>https://www.rabbitmq.com<br>/<wbr>docs</sub></a></td><td align="center" valign="top" width="50%"><a href="https://kafka.apache.org/documentation/"><img src="assets/tool-tiles/apachekafka.png" width="64" height="64" alt="Apache Kafka logo"></a><br><strong>Apache Kafka</strong><br><a href="https://kafka.apache.org/documentation/"><sub>https://kafka.apache.org<br>/<wbr>documentation/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.nats.io/"><img src="assets/tool-tiles/nats.png" width="64" height="64" alt="NATS logo"></a><br><strong>NATS</strong><br><a href="https://docs.nats.io/"><sub>https://docs.nats.io<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://pulsar.apache.org/docs/"><img src="assets/tool-tiles/pulsar.png" width="64" height="64" alt="Apache Pulsar logo"></a><br><strong>Apache Pulsar</strong><br><a href="https://pulsar.apache.org/docs/"><sub>https://pulsar.apache.org<br>/<wbr>docs/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://redis.io/docs/latest/develop/data-types/streams/"><img src="assets/tool-tiles/redis.png" width="64" height="64" alt="Redis Streams logo"></a><br><strong>Redis Streams</strong><br><a href="https://redis.io/docs/latest/develop/data-types/streams/"><sub>https://redis.io<br>/<wbr>docs/<wbr>latest/<wbr>develop/<wbr>data-types/<wbr>streams/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://spark.apache.org/docs/latest/"><img src="assets/tool-tiles/apachespark.png" width="64" height="64" alt="Apache Spark logo"></a><br><strong>Apache Spark</strong><br><a href="https://spark.apache.org/docs/latest/"><sub>https://spark.apache.org<br>/<wbr>docs/<wbr>latest/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://nightlies.apache.org/flink/flink-docs-stable/"><img src="assets/tool-tiles/apacheflink.png" width="64" height="64" alt="Apache Flink logo"></a><br><strong>Apache Flink</strong><br><a href="https://nightlies.apache.org/flink/flink-docs-stable/"><sub>https://nightlies.apache.org<br>/<wbr>flink/<wbr>flink-docs-stable/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://activemq.apache.org/components/"><img src="assets/tool-tiles/apacheactivemq.png" width="64" height="64" alt="ActiveMQ logo"></a><br><strong>ActiveMQ</strong><br><a href="https://activemq.apache.org/components/"><sub>https://activemq.apache.org<br>/<wbr>components/<wbr></sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/14.svg" width="400" alt="Security and Secrets"><table><tr><td align="center" valign="top" width="50%"><a href="https://developer.hashicorp.com/vault/docs"><img src="assets/tool-tiles/vault.png" width="64" height="64" alt="Vault logo"></a><br><strong>Vault</strong><br><a href="https://developer.hashicorp.com/vault/docs"><sub>https://developer.hashicorp.com<br>/<wbr>vault/<wbr>docs</sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.keycloak.org/documentation"><img src="assets/tool-tiles/keycloak.png" width="64" height="64" alt="Keycloak logo"></a><br><strong>Keycloak</strong><br><a href="https://www.keycloak.org/documentation"><sub>https://www.keycloak.org<br>/<wbr>documentation</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://trivy.dev/"><img src="assets/tool-tiles/trivy.png" width="64" height="64" alt="Trivy logo"></a><br><strong>Trivy</strong><br><a href="https://trivy.dev/"><sub>https://trivy.dev<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://falco.org/docs/"><img src="assets/tool-tiles/falco.png" width="64" height="64" alt="Falco logo"></a><br><strong>Falco</strong><br><a href="https://falco.org/docs/"><sub>https://falco.org<br>/<wbr>docs/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://getsops.io/docs/"><img src="assets/tool-tiles/sops.png" width="64" height="64" alt="SOPS logo"></a><br><strong>SOPS</strong><br><a href="https://getsops.io/docs/"><sub>https://getsops.io<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.sigstore.dev/"><img src="assets/tool-tiles/sigstore.png" width="64" height="64" alt="Sigstore logo"></a><br><strong>Sigstore</strong><br><a href="https://docs.sigstore.dev/"><sub>https://docs.sigstore.dev<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://kyverno.io/docs/"><img src="assets/tool-tiles/kyverno.png" width="64" height="64" alt="Kyverno logo"></a><br><strong>Kyverno</strong><br><a href="https://kyverno.io/docs/"><sub>https://kyverno.io<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.openpolicyagent.org/docs/"><img src="assets/tool-tiles/openpolicyagent.png" width="64" height="64" alt="Open Policy Agent logo"></a><br><strong>Open Policy Agent</strong><br><a href="https://www.openpolicyagent.org/docs/"><sub>https://www.openpolicyagent.org<br>/<wbr>docs/<wbr></sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/15.svg" width="400" alt="Artifact and Package Management"><table><tr><td align="center" valign="top" width="50%"><a href="https://goharbor.io/docs/"><img src="assets/tool-tiles/harbor.png" width="64" height="64" alt="Harbor logo"></a><br><strong>Harbor</strong><br><a href="https://goharbor.io/docs/"><sub>https://goharbor.io<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://jfrog.com/help/"><img src="assets/tool-tiles/jfrog.png" width="64" height="64" alt="JFrog Artifactory logo"></a><br><strong>JFrog Artifactory</strong><br><a href="https://jfrog.com/help/"><sub>https://jfrog.com<br>/<wbr>help/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://help.sonatype.com/en/sonatype-nexus-repository.html"><img src="assets/tool-tiles/sonatype.png" width="64" height="64" alt="Nexus Repository logo"></a><br><strong>Nexus Repository</strong><br><a href="https://help.sonatype.com/en/sonatype-nexus-repository.html"><sub>https://help.sonatype.com<br>/<wbr>en/<wbr>sonatype-nexus-repository.html</sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.docker.com/docker-hub/"><img src="assets/tool-tiles/docker.png" width="64" height="64" alt="Docker Hub logo"></a><br><strong>Docker Hub</strong><br><a href="https://docs.docker.com/docker-hub/"><sub>https://docs.docker.com<br>/<wbr>docker-hub/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.github.com/en/packages"><img src="assets/tool-tiles/github.png" width="64" height="64" alt="GitHub Packages logo"></a><br><strong>GitHub Packages</strong><br><a href="https://docs.github.com/en/packages"><sub>https://docs.github.com<br>/<wbr>en/<wbr>packages</sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.gitlab.com/user/packages/container_registry/"><img src="assets/tool-tiles/gitlab.png" width="64" height="64" alt="GitLab Registry logo"></a><br><strong>GitLab Registry</strong><br><a href="https://docs.gitlab.com/user/packages/container_registry/"><sub>https://docs.gitlab.com<br>/<wbr>user/<wbr>packages/<wbr>container_registry/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://helm.sh/docs/topics/charts/"><img src="assets/tool-tiles/helm.png" width="64" height="64" alt="Helm Charts logo"></a><br><strong>Helm Charts</strong><br><a href="https://helm.sh/docs/topics/charts/"><sub>https://helm.sh<br>/<wbr>docs/<wbr>topics/<wbr>charts/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://learn.microsoft.com/en-us/nuget/"><img src="assets/tool-tiles/nuget.png" width="64" height="64" alt="NuGet logo"></a><br><strong>NuGet</strong><br><a href="https://learn.microsoft.com/en-us/nuget/"><sub>https://learn.microsoft.com<br>/<wbr>en-us/<wbr>nuget/<wbr></sub></a></td></tr></table></td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/13.svg" width="100%" alt="Queues and Streaming"><br>
+<a href="https://www.rabbitmq.com/docs"><img src="assets/tool-cards/rabbitmq.png" width="21%" alt="RabbitMQ — official documentation"></a>
+<a href="https://kafka.apache.org/documentation/"><img src="assets/tool-cards/apache-kafka.png" width="21%" alt="Apache Kafka — official documentation"></a>
+<a href="https://docs.nats.io/"><img src="assets/tool-cards/nats.png" width="21%" alt="NATS — official documentation"></a>
+<a href="https://pulsar.apache.org/docs/"><img src="assets/tool-cards/apache-pulsar.png" width="21%" alt="Apache Pulsar — official documentation"></a><br>
+<a href="https://redis.io/docs/latest/develop/data-types/streams/"><img src="assets/tool-cards/redis-streams.png" width="21%" alt="Redis Streams — official documentation"></a>
+<a href="https://spark.apache.org/docs/latest/"><img src="assets/tool-cards/apache-spark.png" width="21%" alt="Apache Spark — official documentation"></a>
+<a href="https://nightlies.apache.org/flink/flink-docs-stable/"><img src="assets/tool-cards/apache-flink.png" width="21%" alt="Apache Flink — official documentation"></a>
+<a href="https://activemq.apache.org/components/"><img src="assets/tool-cards/activemq.png" width="21%" alt="ActiveMQ — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/14.svg" width="100%" alt="Security and Secrets"><br>
+<a href="https://developer.hashicorp.com/vault/docs"><img src="assets/tool-cards/vault.png" width="21%" alt="Vault — official documentation"></a>
+<a href="https://www.keycloak.org/documentation"><img src="assets/tool-cards/keycloak.png" width="21%" alt="Keycloak — official documentation"></a>
+<a href="https://trivy.dev/"><img src="assets/tool-cards/trivy.png" width="21%" alt="Trivy — official documentation"></a>
+<a href="https://falco.org/docs/"><img src="assets/tool-cards/falco.png" width="21%" alt="Falco — official documentation"></a><br>
+<a href="https://getsops.io/docs/"><img src="assets/tool-cards/sops.png" width="21%" alt="SOPS — official documentation"></a>
+<a href="https://docs.sigstore.dev/"><img src="assets/tool-cards/sigstore.png" width="21%" alt="Sigstore — official documentation"></a>
+<a href="https://kyverno.io/docs/"><img src="assets/tool-cards/kyverno.png" width="21%" alt="Kyverno — official documentation"></a>
+<a href="https://www.openpolicyagent.org/docs/"><img src="assets/tool-cards/open-policy-agent.png" width="21%" alt="Open Policy Agent — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/15.svg" width="100%" alt="Artifact and Package Management"><br>
+<a href="https://goharbor.io/docs/"><img src="assets/tool-cards/harbor.png" width="21%" alt="Harbor — official documentation"></a>
+<a href="https://jfrog.com/help/"><img src="assets/tool-cards/jfrog-artifactory.png" width="21%" alt="JFrog Artifactory — official documentation"></a>
+<a href="https://help.sonatype.com/en/sonatype-nexus-repository.html"><img src="assets/tool-cards/nexus-repository.png" width="21%" alt="Nexus Repository — official documentation"></a>
+<a href="https://docs.docker.com/docker-hub/"><img src="assets/tool-cards/docker-hub.png" width="21%" alt="Docker Hub — official documentation"></a><br>
+<a href="https://docs.github.com/en/packages"><img src="assets/tool-cards/github-packages.png" width="21%" alt="GitHub Packages — official documentation"></a>
+<a href="https://docs.gitlab.com/user/packages/container_registry/"><img src="assets/tool-cards/gitlab-registry.png" width="21%" alt="GitLab Registry — official documentation"></a>
+<a href="https://helm.sh/docs/topics/charts/"><img src="assets/tool-cards/helm-charts.png" width="21%" alt="Helm Charts — official documentation"></a>
+<a href="https://learn.microsoft.com/en-us/nuget/"><img src="assets/tool-cards/nuget.png" width="21%" alt="NuGet — official documentation"></a><br>
+</td>
 </tr>
 <tr>
-<td valign="top" width="33%"><img src="assets/categories/16.svg" width="400" alt="Collaboration and Planning"><table><tr><td align="center" valign="top" width="50%"><a href="https://support.atlassian.com/jira-software-cloud/"><img src="assets/tool-tiles/jira.png" width="64" height="64" alt="Jira logo"></a><br><strong>Jira</strong><br><a href="https://support.atlassian.com/jira-software-cloud/"><sub>https://support.atlassian.com<br>/<wbr>jira-software-cloud/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://support.atlassian.com/confluence/"><img src="assets/tool-tiles/confluence.png" width="64" height="64" alt="Confluence logo"></a><br><strong>Confluence</strong><br><a href="https://support.atlassian.com/confluence/"><sub>https://support.atlassian.com<br>/<wbr>confluence/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.slack.dev/"><img src="assets/tool-tiles/slack.png" width="64" height="64" alt="Slack logo"></a><br><strong>Slack</strong><br><a href="https://docs.slack.dev/"><sub>https://docs.slack.dev<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://learn.microsoft.com/en-us/microsoftteams/"><img src="assets/tool-tiles/microsoftteams.png" width="64" height="64" alt="Microsoft Teams logo"></a><br><strong>Microsoft Teams</strong><br><a href="https://learn.microsoft.com/en-us/microsoftteams/"><sub>https://learn.microsoft.com<br>/<wbr>en-us/<wbr>microsoftteams/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://support.atlassian.com/trello/"><img src="assets/tool-tiles/trello.png" width="64" height="64" alt="Trello logo"></a><br><strong>Trello</strong><br><a href="https://support.atlassian.com/trello/"><sub>https://support.atlassian.com<br>/<wbr>trello/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://developers.notion.com/"><img src="assets/tool-tiles/notion.png" width="64" height="64" alt="Notion logo"></a><br><strong>Notion</strong><br><a href="https://developers.notion.com/"><sub>https://developers.notion.com<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://linear.app/docs"><img src="assets/tool-tiles/linear.png" width="64" height="64" alt="Linear logo"></a><br><strong>Linear</strong><br><a href="https://linear.app/docs"><sub>https://linear.app<br>/<wbr>docs</sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.mattermost.com/"><img src="assets/tool-tiles/mattermost.png" width="64" height="64" alt="Mattermost logo"></a><br><strong>Mattermost</strong><br><a href="https://docs.mattermost.com/"><sub>https://docs.mattermost.com<br>/<wbr></sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/17.svg" width="400" alt="Scripting and Automation"><table><tr><td align="center" valign="top" width="50%"><a href="https://www.gnu.org/software/bash/manual/"><img src="assets/tool-tiles/bash.png" width="64" height="64" alt="Bash logo"></a><br><strong>Bash</strong><br><a href="https://www.gnu.org/software/bash/manual/"><sub>https://www.gnu.org<br>/<wbr>software/<wbr>bash/<wbr>manual/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.python.org/3/"><img src="assets/tool-tiles/python.png" width="64" height="64" alt="Python logo"></a><br><strong>Python</strong><br><a href="https://docs.python.org/3/"><sub>https://docs.python.org<br>/<wbr>3/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://learn.microsoft.com/en-us/powershell/"><img src="assets/tool-tiles/powershell.png" width="64" height="64" alt="PowerShell logo"></a><br><strong>PowerShell</strong><br><a href="https://learn.microsoft.com/en-us/powershell/"><sub>https://learn.microsoft.com<br>/<wbr>en-us/<wbr>powershell/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://go.dev/doc/"><img src="assets/tool-tiles/go.png" width="64" height="64" alt="Go logo"></a><br><strong>Go</strong><br><a href="https://go.dev/doc/"><sub>https://go.dev<br>/<wbr>doc/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://perldoc.perl.org/"><img src="assets/tool-tiles/perl.png" width="64" height="64" alt="Perl logo"></a><br><strong>Perl</strong><br><a href="https://perldoc.perl.org/"><sub>https://perldoc.perl.org<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.ruby-lang.org/en/documentation/"><img src="assets/tool-tiles/ruby.png" width="64" height="64" alt="Ruby logo"></a><br><strong>Ruby</strong><br><a href="https://www.ruby-lang.org/en/documentation/"><sub>https://www.ruby-lang.org<br>/<wbr>en/<wbr>documentation/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://nodejs.org/en/learn"><img src="assets/tool-tiles/nodejs.png" width="64" height="64" alt="Node.js logo"></a><br><strong>Node.js</strong><br><a href="https://nodejs.org/en/learn"><sub>https://nodejs.org<br>/<wbr>en/<wbr>learn</sub></a></td><td align="center" valign="top" width="50%"><a href="https://www.gnu.org/software/make/manual/"><img src="assets/tool-tiles/gnu.png" width="64" height="64" alt="GNU Make logo"></a><br><strong>GNU Make</strong><br><a href="https://www.gnu.org/software/make/manual/"><sub>https://www.gnu.org<br>/<wbr>software/<wbr>make/<wbr>manual/<wbr></sub></a></td></tr></table></td><td valign="top" width="33%"><img src="assets/categories/18.svg" width="400" alt="GitOps and Platforms"><table><tr><td align="center" valign="top" width="50%"><a href="https://argo-cd.readthedocs.io/en/stable/"><img src="assets/tool-tiles/argocd.png" width="64" height="64" alt="Argo CD logo"></a><br><strong>Argo CD</strong><br><a href="https://argo-cd.readthedocs.io/en/stable/"><sub>https://argo-cd.readthedocs.io<br>/<wbr>en/<wbr>stable/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://fluxcd.io/flux/"><img src="assets/tool-tiles/flux.png" width="64" height="64" alt="Flux logo"></a><br><strong>Flux</strong><br><a href="https://fluxcd.io/flux/"><sub>https://fluxcd.io<br>/<wbr>flux/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://tekton.dev/docs/"><img src="assets/tool-tiles/tekton.png" width="64" height="64" alt="Tekton logo"></a><br><strong>Tekton</strong><br><a href="https://tekton.dev/docs/"><sub>https://tekton.dev<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://backstage.io/docs/"><img src="assets/tool-tiles/backstage.png" width="64" height="64" alt="Backstage logo"></a><br><strong>Backstage</strong><br><a href="https://backstage.io/docs/"><sub>https://backstage.io<br>/<wbr>docs/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://airflow.apache.org/docs/"><img src="assets/tool-tiles/apacheairflow.png" width="64" height="64" alt="Apache Airflow logo"></a><br><strong>Apache Airflow</strong><br><a href="https://airflow.apache.org/docs/"><sub>https://airflow.apache.org<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.sonarsource.com/sonarqube-server/"><img src="assets/tool-tiles/sonarqube.png" width="64" height="64" alt="SonarQube logo"></a><br><strong>SonarQube</strong><br><a href="https://docs.sonarsource.com/sonarqube-server/"><sub>https://docs.sonarsource.com<br>/<wbr>sonarqube-server/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://www.kubeflow.org/docs/"><img src="assets/tool-tiles/kubeflow.png" width="64" height="64" alt="Kubeflow logo"></a><br><strong>Kubeflow</strong><br><a href="https://www.kubeflow.org/docs/"><sub>https://www.kubeflow.org<br>/<wbr>docs/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.crossplane.io/"><img src="assets/tool-tiles/crossplane.png" width="64" height="64" alt="Crossplane logo"></a><br><strong>Crossplane</strong><br><a href="https://docs.crossplane.io/"><sub>https://docs.crossplane.io<br>/<wbr></sub></a></td></tr></table></td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/16.svg" width="100%" alt="Collaboration and Planning"><br>
+<a href="https://support.atlassian.com/jira-software-cloud/"><img src="assets/tool-cards/jira.png" width="21%" alt="Jira — official documentation"></a>
+<a href="https://support.atlassian.com/confluence/"><img src="assets/tool-cards/confluence.png" width="21%" alt="Confluence — official documentation"></a>
+<a href="https://docs.slack.dev/"><img src="assets/tool-cards/slack.png" width="21%" alt="Slack — official documentation"></a>
+<a href="https://learn.microsoft.com/en-us/microsoftteams/"><img src="assets/tool-cards/microsoft-teams.png" width="21%" alt="Microsoft Teams — official documentation"></a><br>
+<a href="https://support.atlassian.com/trello/"><img src="assets/tool-cards/trello.png" width="21%" alt="Trello — official documentation"></a>
+<a href="https://developers.notion.com/"><img src="assets/tool-cards/notion.png" width="21%" alt="Notion — official documentation"></a>
+<a href="https://linear.app/docs"><img src="assets/tool-cards/linear.png" width="21%" alt="Linear — official documentation"></a>
+<a href="https://docs.mattermost.com/"><img src="assets/tool-cards/mattermost.png" width="21%" alt="Mattermost — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/17.svg" width="100%" alt="Scripting and Automation"><br>
+<a href="https://www.gnu.org/software/bash/manual/"><img src="assets/tool-cards/bash.png" width="21%" alt="Bash — official documentation"></a>
+<a href="https://docs.python.org/3/"><img src="assets/tool-cards/python.png" width="21%" alt="Python — official documentation"></a>
+<a href="https://learn.microsoft.com/en-us/powershell/"><img src="assets/tool-cards/powershell.png" width="21%" alt="PowerShell — official documentation"></a>
+<a href="https://go.dev/doc/"><img src="assets/tool-cards/go.png" width="21%" alt="Go — official documentation"></a><br>
+<a href="https://perldoc.perl.org/"><img src="assets/tool-cards/perl.png" width="21%" alt="Perl — official documentation"></a>
+<a href="https://www.ruby-lang.org/en/documentation/"><img src="assets/tool-cards/ruby.png" width="21%" alt="Ruby — official documentation"></a>
+<a href="https://nodejs.org/en/learn"><img src="assets/tool-cards/node-js.png" width="21%" alt="Node.js — official documentation"></a>
+<a href="https://www.gnu.org/software/make/manual/"><img src="assets/tool-cards/gnu-make.png" width="21%" alt="GNU Make — official documentation"></a><br>
+</td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/18.svg" width="100%" alt="GitOps and Platforms"><br>
+<a href="https://argo-cd.readthedocs.io/en/stable/"><img src="assets/tool-cards/argo-cd.png" width="21%" alt="Argo CD — official documentation"></a>
+<a href="https://fluxcd.io/flux/"><img src="assets/tool-cards/flux.png" width="21%" alt="Flux — official documentation"></a>
+<a href="https://tekton.dev/docs/"><img src="assets/tool-cards/tekton.png" width="21%" alt="Tekton — official documentation"></a>
+<a href="https://backstage.io/docs/"><img src="assets/tool-cards/backstage.png" width="21%" alt="Backstage — official documentation"></a><br>
+<a href="https://airflow.apache.org/docs/"><img src="assets/tool-cards/apache-airflow.png" width="21%" alt="Apache Airflow — official documentation"></a>
+<a href="https://docs.sonarsource.com/sonarqube-server/"><img src="assets/tool-cards/sonarqube.png" width="21%" alt="SonarQube — official documentation"></a>
+<a href="https://www.kubeflow.org/docs/"><img src="assets/tool-cards/kubeflow.png" width="21%" alt="Kubeflow — official documentation"></a>
+<a href="https://docs.crossplane.io/"><img src="assets/tool-cards/crossplane.png" width="21%" alt="Crossplane — official documentation"></a><br>
+</td>
 </tr>
 <tr>
-<td valign="top" width="33%"><img src="assets/categories/19.svg" width="400" alt="Build and Testing"><table><tr><td align="center" valign="top" width="50%"><a href="https://maven.apache.org/guides/"><img src="assets/tool-tiles/maven.png" width="64" height="64" alt="Maven logo"></a><br><strong>Maven</strong><br><a href="https://maven.apache.org/guides/"><sub>https://maven.apache.org<br>/<wbr>guides/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.gradle.org/"><img src="assets/tool-tiles/gradle.png" width="64" height="64" alt="Gradle logo"></a><br><strong>Gradle</strong><br><a href="https://docs.gradle.org/"><sub>https://docs.gradle.org<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://bazel.build/docs"><img src="assets/tool-tiles/bazel.png" width="64" height="64" alt="Bazel logo"></a><br><strong>Bazel</strong><br><a href="https://bazel.build/docs"><sub>https://bazel.build<br>/<wbr>docs</sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.npmjs.com/"><img src="assets/tool-tiles/npm.png" width="64" height="64" alt="npm logo"></a><br><strong>npm</strong><br><a href="https://docs.npmjs.com/"><sub>https://docs.npmjs.com<br>/<wbr></sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://docs.pytest.org/"><img src="assets/tool-tiles/pytest.png" width="64" height="64" alt="pytest logo"></a><br><strong>pytest</strong><br><a href="https://docs.pytest.org/"><sub>https://docs.pytest.org<br>/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://playwright.dev/docs/intro"><img src="assets/tool-tiles/playwright.png" width="64" height="64" alt="Playwright logo"></a><br><strong>Playwright</strong><br><a href="https://playwright.dev/docs/intro"><sub>https://playwright.dev<br>/<wbr>docs/<wbr>intro</sub></a></td></tr><tr><td align="center" valign="top" width="50%"><a href="https://grafana.com/docs/k6/latest/"><img src="assets/tool-tiles/k6.png" width="64" height="64" alt="k6 logo"></a><br><strong>k6</strong><br><a href="https://grafana.com/docs/k6/latest/"><sub>https://grafana.com<br>/<wbr>docs/<wbr>k6/<wbr>latest/<wbr></sub></a></td><td align="center" valign="top" width="50%"><a href="https://docs.cypress.io/"><img src="assets/tool-tiles/cypressio.png" width="64" height="64" alt="Cypress logo"></a><br><strong>Cypress</strong><br><a href="https://docs.cypress.io/"><sub>https://docs.cypress.io<br>/<wbr></sub></a></td></tr></table></td>
+<td align="center" valign="top" width="33%"><img src="assets/categories/19.svg" width="100%" alt="Build and Testing"><br>
+<a href="https://maven.apache.org/guides/"><img src="assets/tool-cards/maven.png" width="21%" alt="Maven — official documentation"></a>
+<a href="https://docs.gradle.org/"><img src="assets/tool-cards/gradle.png" width="21%" alt="Gradle — official documentation"></a>
+<a href="https://bazel.build/docs"><img src="assets/tool-cards/bazel.png" width="21%" alt="Bazel — official documentation"></a>
+<a href="https://docs.npmjs.com/"><img src="assets/tool-cards/npm.png" width="21%" alt="npm — official documentation"></a><br>
+<a href="https://docs.pytest.org/"><img src="assets/tool-cards/pytest.png" width="21%" alt="pytest — official documentation"></a>
+<a href="https://playwright.dev/docs/intro"><img src="assets/tool-cards/playwright.png" width="21%" alt="Playwright — official documentation"></a>
+<a href="https://grafana.com/docs/k6/latest/"><img src="assets/tool-cards/k6.png" width="21%" alt="k6 — official documentation"></a>
+<a href="https://docs.cypress.io/"><img src="assets/tool-cards/cypress.png" width="21%" alt="Cypress — official documentation"></a><br>
+</td>
 </tr>
 </table>
 
-Related services share the relevant product or vendor mark where appropriate—for example, GitHub Packages, GitLab Registry, CloudFormation, and BuildKit.
+Related services use the relevant product or vendor mark. Full official URLs are listed in the quick reference below.
 
-#### Tool quick reference
+<details>
+<summary><strong>Full official documentation URLs</strong></summary>
 
-| Category | Tool | Official documentation |
-| --- | --- | --- |
-| Version Control | Git | https://git-scm.com/doc |
-| Version Control | GitHub | https://docs.github.com/ |
-| Version Control | GitLab | https://docs.gitlab.com/ |
-| Version Control | Bitbucket | https://support.atlassian.com/bitbucket-cloud/ |
-| Version Control | Gitea | https://docs.gitea.com/ |
-| Version Control | Forgejo | https://forgejo.org/docs/latest/ |
-| Version Control | Mercurial | https://www.mercurial-scm.org/help/commands |
-| Version Control | Subversion | https://subversion.apache.org/docs/ |
-| CI/CD | Jenkins | https://www.jenkins.io/doc/ |
-| CI/CD | GitHub Actions | https://docs.github.com/en/actions |
-| CI/CD | GitLab CI/CD | https://docs.gitlab.com/ci/ |
-| CI/CD | CircleCI | https://circleci.com/docs/ |
-| CI/CD | Azure Pipelines | https://learn.microsoft.com/en-us/azure/devops/pipelines/ |
-| CI/CD | TeamCity | https://www.jetbrains.com/help/teamcity/ |
-| CI/CD | Buildkite | https://buildkite.com/docs |
-| CI/CD | Travis CI | https://docs.travis-ci.com/ |
-| Containerization | Docker | https://docs.docker.com/ |
-| Containerization | containerd | https://containerd.io/docs/ |
-| Containerization | Podman | https://docs.podman.io/ |
-| Containerization | Buildah | https://buildah.io/ |
-| Containerization | BuildKit | https://docs.docker.com/build/buildkit/ |
-| Containerization | Skopeo | https://github.com/containers/skopeo/tree/main/docs |
-| Containerization | Harbor | https://goharbor.io/docs/ |
-| Containerization | Portainer | https://docs.portainer.io/ |
-| Orchestration | Kubernetes | https://kubernetes.io/docs/ |
-| Orchestration | OpenShift | https://docs.redhat.com/en/documentation/openshift_container_platform |
-| Orchestration | Rancher | https://ranchermanager.docs.rancher.com/ |
-| Orchestration | Nomad | https://developer.hashicorp.com/nomad/docs |
-| Orchestration | K3s | https://docs.k3s.io/ |
-| Orchestration | Helm | https://helm.sh/docs/ |
-| Orchestration | Docker Swarm | https://docs.docker.com/engine/swarm/ |
-| Orchestration | Talos Linux | https://www.talos.dev/ |
-| Infrastructure as Code | Terraform | https://developer.hashicorp.com/terraform/docs |
-| Infrastructure as Code | OpenTofu | https://opentofu.org/docs/ |
-| Infrastructure as Code | Pulumi | https://www.pulumi.com/docs/ |
-| Infrastructure as Code | CloudFormation | https://docs.aws.amazon.com/cloudformation/ |
-| Infrastructure as Code | Packer | https://developer.hashicorp.com/packer/docs |
-| Infrastructure as Code | Vagrant | https://developer.hashicorp.com/vagrant/docs |
-| Infrastructure as Code | Crossplane | https://docs.crossplane.io/ |
-| Infrastructure as Code | Terramate | https://terramate.io/docs/ |
-| Configuration Management | Ansible | https://docs.ansible.com/ |
-| Configuration Management | Chef | https://docs.chef.io/ |
-| Configuration Management | Puppet | https://www.puppet.com/docs |
-| Configuration Management | Salt | https://docs.saltproject.io/ |
-| Configuration Management | AWX | https://ansible.readthedocs.io/projects/awx/en/latest/ |
-| Configuration Management | CFEngine | https://docs.cfengine.com/ |
-| Configuration Management | NixOS | https://nixos.org/manual/nixos/stable/ |
-| Configuration Management | PowerShell DSC | https://learn.microsoft.com/en-us/powershell/dsc/overview |
-| Cloud Platforms | AWS | https://docs.aws.amazon.com/ |
-| Cloud Platforms | Microsoft Azure | https://learn.microsoft.com/en-us/azure/ |
-| Cloud Platforms | Google Cloud | https://cloud.google.com/docs |
-| Cloud Platforms | Oracle Cloud | https://docs.oracle.com/en-us/iaas/Content/home.htm |
-| Cloud Platforms | DigitalOcean | https://docs.digitalocean.com/ |
-| Cloud Platforms | IBM Cloud | https://cloud.ibm.com/docs |
-| Cloud Platforms | Alibaba Cloud | https://www.alibabacloud.com/help/ |
-| Cloud Platforms | Hetzner | https://docs.hetzner.com/ |
-| Monitoring and Observability | Prometheus | https://prometheus.io/docs/ |
-| Monitoring and Observability | Grafana | https://grafana.com/docs/ |
-| Monitoring and Observability | Datadog | https://docs.datadoghq.com/ |
-| Monitoring and Observability | New Relic | https://docs.newrelic.com/ |
-| Monitoring and Observability | OpenTelemetry | https://opentelemetry.io/docs/ |
-| Monitoring and Observability | Jaeger | https://www.jaegertracing.io/docs/ |
-| Monitoring and Observability | Dynatrace | https://docs.dynatrace.com/ |
-| Monitoring and Observability | Zabbix | https://www.zabbix.com/documentation/current/en/manual |
-| Logging | Elasticsearch | https://www.elastic.co/docs |
-| Logging | Logstash | https://www.elastic.co/docs/reference/logstash |
-| Logging | Kibana | https://www.elastic.co/docs/explore-analyze |
-| Logging | Loki | https://grafana.com/docs/loki/latest/ |
-| Logging | Fluentd | https://docs.fluentd.org/ |
-| Logging | Fluent Bit | https://docs.fluentbit.io/ |
-| Logging | Splunk | https://docs.splunk.com/ |
-| Logging | Elastic Beats | https://www.elastic.co/docs/reference/beats |
-| Networking and Ingress | NGINX | https://nginx.org/en/docs/ |
-| Networking and Ingress | HAProxy | https://www.haproxy.org/#docs |
-| Networking and Ingress | Traefik | https://doc.traefik.io/traefik/ |
-| Networking and Ingress | Cilium | https://docs.cilium.io/ |
-| Networking and Ingress | Calico | https://docs.tigera.io/calico/latest/about |
-| Networking and Ingress | CoreDNS | https://coredns.io/manual/toc/ |
-| Networking and Ingress | Cloudflare | https://developers.cloudflare.com/ |
-| Networking and Ingress | WireGuard | https://www.wireguard.com/quickstart/ |
-| Service Mesh and Traffic | Istio | https://istio.io/latest/docs/ |
-| Service Mesh and Traffic | Linkerd | https://linkerd.io/2/overview/ |
-| Service Mesh and Traffic | Consul | https://developer.hashicorp.com/consul/docs |
-| Service Mesh and Traffic | Envoy | https://www.envoyproxy.io/docs |
-| Service Mesh and Traffic | Kuma | https://kuma.io/docs/ |
-| Service Mesh and Traffic | Kong Gateway | https://developer.konghq.com/gateway/ |
-| Service Mesh and Traffic | Envoy Gateway | https://gateway.envoyproxy.io/docs/ |
-| Service Mesh and Traffic | cert-manager | https://cert-manager.io/docs/ |
-| Databases and Data Stores | PostgreSQL | https://www.postgresql.org/docs/ |
-| Databases and Data Stores | MySQL | https://dev.mysql.com/doc/ |
-| Databases and Data Stores | MongoDB | https://www.mongodb.com/docs/ |
-| Databases and Data Stores | Redis | https://redis.io/docs/latest/ |
-| Databases and Data Stores | Cassandra | https://cassandra.apache.org/doc/latest/ |
-| Databases and Data Stores | MariaDB | https://mariadb.com/docs/ |
-| Databases and Data Stores | SQLite | https://www.sqlite.org/docs.html |
-| Databases and Data Stores | ClickHouse | https://clickhouse.com/docs |
-| Queues and Streaming | RabbitMQ | https://www.rabbitmq.com/docs |
-| Queues and Streaming | Apache Kafka | https://kafka.apache.org/documentation/ |
-| Queues and Streaming | NATS | https://docs.nats.io/ |
-| Queues and Streaming | Apache Pulsar | https://pulsar.apache.org/docs/ |
-| Queues and Streaming | Redis Streams | https://redis.io/docs/latest/develop/data-types/streams/ |
-| Queues and Streaming | Apache Spark | https://spark.apache.org/docs/latest/ |
-| Queues and Streaming | Apache Flink | https://nightlies.apache.org/flink/flink-docs-stable/ |
-| Queues and Streaming | ActiveMQ | https://activemq.apache.org/components/ |
-| Security and Secrets | Vault | https://developer.hashicorp.com/vault/docs |
-| Security and Secrets | Keycloak | https://www.keycloak.org/documentation |
-| Security and Secrets | Trivy | https://trivy.dev/ |
-| Security and Secrets | Falco | https://falco.org/docs/ |
-| Security and Secrets | SOPS | https://getsops.io/docs/ |
-| Security and Secrets | Sigstore | https://docs.sigstore.dev/ |
-| Security and Secrets | Kyverno | https://kyverno.io/docs/ |
-| Security and Secrets | Open Policy Agent | https://www.openpolicyagent.org/docs/ |
-| Artifact and Package Management | Harbor | https://goharbor.io/docs/ |
-| Artifact and Package Management | JFrog Artifactory | https://jfrog.com/help/ |
-| Artifact and Package Management | Nexus Repository | https://help.sonatype.com/en/sonatype-nexus-repository.html |
-| Artifact and Package Management | Docker Hub | https://docs.docker.com/docker-hub/ |
-| Artifact and Package Management | GitHub Packages | https://docs.github.com/en/packages |
-| Artifact and Package Management | GitLab Registry | https://docs.gitlab.com/user/packages/container_registry/ |
-| Artifact and Package Management | Helm Charts | https://helm.sh/docs/topics/charts/ |
-| Artifact and Package Management | NuGet | https://learn.microsoft.com/en-us/nuget/ |
-| Collaboration and Planning | Jira | https://support.atlassian.com/jira-software-cloud/ |
-| Collaboration and Planning | Confluence | https://support.atlassian.com/confluence/ |
-| Collaboration and Planning | Slack | https://docs.slack.dev/ |
-| Collaboration and Planning | Microsoft Teams | https://learn.microsoft.com/en-us/microsoftteams/ |
-| Collaboration and Planning | Trello | https://support.atlassian.com/trello/ |
-| Collaboration and Planning | Notion | https://developers.notion.com/ |
-| Collaboration and Planning | Linear | https://linear.app/docs |
-| Collaboration and Planning | Mattermost | https://docs.mattermost.com/ |
-| Scripting and Automation | Bash | https://www.gnu.org/software/bash/manual/ |
-| Scripting and Automation | Python | https://docs.python.org/3/ |
-| Scripting and Automation | PowerShell | https://learn.microsoft.com/en-us/powershell/ |
-| Scripting and Automation | Go | https://go.dev/doc/ |
-| Scripting and Automation | Perl | https://perldoc.perl.org/ |
-| Scripting and Automation | Ruby | https://www.ruby-lang.org/en/documentation/ |
-| Scripting and Automation | Node.js | https://nodejs.org/en/learn |
-| Scripting and Automation | GNU Make | https://www.gnu.org/software/make/manual/ |
-| GitOps and Platforms | Argo CD | https://argo-cd.readthedocs.io/en/stable/ |
-| GitOps and Platforms | Flux | https://fluxcd.io/flux/ |
-| GitOps and Platforms | Tekton | https://tekton.dev/docs/ |
-| GitOps and Platforms | Backstage | https://backstage.io/docs/ |
-| GitOps and Platforms | Apache Airflow | https://airflow.apache.org/docs/ |
-| GitOps and Platforms | SonarQube | https://docs.sonarsource.com/sonarqube-server/ |
-| GitOps and Platforms | Kubeflow | https://www.kubeflow.org/docs/ |
-| GitOps and Platforms | Crossplane | https://docs.crossplane.io/ |
-| Build and Testing | Maven | https://maven.apache.org/guides/ |
-| Build and Testing | Gradle | https://docs.gradle.org/ |
-| Build and Testing | Bazel | https://bazel.build/docs |
-| Build and Testing | npm | https://docs.npmjs.com/ |
-| Build and Testing | pytest | https://docs.pytest.org/ |
-| Build and Testing | Playwright | https://playwright.dev/docs/intro |
-| Build and Testing | k6 | https://grafana.com/docs/k6/latest/ |
-| Build and Testing | Cypress | https://docs.cypress.io/ |
+#### Version Control
+
+- **Git:** https://git-scm.com/doc
+- **GitHub:** https://docs.github.com/
+- **GitLab:** https://docs.gitlab.com/
+- **Bitbucket:** https://support.atlassian.com/bitbucket-cloud/
+- **Gitea:** https://docs.gitea.com/
+- **Forgejo:** https://forgejo.org/docs/latest/
+- **Mercurial:** https://www.mercurial-scm.org/help/commands
+- **Subversion:** https://subversion.apache.org/docs/
+
+#### CI/CD
+
+- **Jenkins:** https://www.jenkins.io/doc/
+- **GitHub Actions:** https://docs.github.com/en/actions
+- **GitLab CI/CD:** https://docs.gitlab.com/ci/
+- **CircleCI:** https://circleci.com/docs/
+- **Azure Pipelines:** https://learn.microsoft.com/en-us/azure/devops/pipelines/
+- **TeamCity:** https://www.jetbrains.com/help/teamcity/
+- **Buildkite:** https://buildkite.com/docs
+- **Travis CI:** https://docs.travis-ci.com/
+
+#### Containerization
+
+- **Docker:** https://docs.docker.com/
+- **containerd:** https://containerd.io/docs/
+- **Podman:** https://docs.podman.io/
+- **Buildah:** https://buildah.io/
+- **BuildKit:** https://docs.docker.com/build/buildkit/
+- **Skopeo:** https://github.com/containers/skopeo/tree/main/docs
+- **Harbor:** https://goharbor.io/docs/
+- **Portainer:** https://docs.portainer.io/
+
+#### Orchestration
+
+- **Kubernetes:** https://kubernetes.io/docs/
+- **OpenShift:** https://docs.redhat.com/en/documentation/openshift_container_platform
+- **Rancher:** https://ranchermanager.docs.rancher.com/
+- **Nomad:** https://developer.hashicorp.com/nomad/docs
+- **K3s:** https://docs.k3s.io/
+- **Helm:** https://helm.sh/docs/
+- **Docker Swarm:** https://docs.docker.com/engine/swarm/
+- **Talos Linux:** https://www.talos.dev/
+
+#### Infrastructure as Code
+
+- **Terraform:** https://developer.hashicorp.com/terraform/docs
+- **OpenTofu:** https://opentofu.org/docs/
+- **Pulumi:** https://www.pulumi.com/docs/
+- **CloudFormation:** https://docs.aws.amazon.com/cloudformation/
+- **Packer:** https://developer.hashicorp.com/packer/docs
+- **Vagrant:** https://developer.hashicorp.com/vagrant/docs
+- **Crossplane:** https://docs.crossplane.io/
+- **Terramate:** https://terramate.io/docs/
+
+#### Configuration Management
+
+- **Ansible:** https://docs.ansible.com/
+- **Chef:** https://docs.chef.io/
+- **Puppet:** https://www.puppet.com/docs
+- **Salt:** https://docs.saltproject.io/
+- **AWX:** https://ansible.readthedocs.io/projects/awx/en/latest/
+- **CFEngine:** https://docs.cfengine.com/
+- **NixOS:** https://nixos.org/manual/nixos/stable/
+- **PowerShell DSC:** https://learn.microsoft.com/en-us/powershell/dsc/overview
+
+#### Cloud Platforms
+
+- **AWS:** https://docs.aws.amazon.com/
+- **Microsoft Azure:** https://learn.microsoft.com/en-us/azure/
+- **Google Cloud:** https://cloud.google.com/docs
+- **Oracle Cloud:** https://docs.oracle.com/en-us/iaas/Content/home.htm
+- **DigitalOcean:** https://docs.digitalocean.com/
+- **IBM Cloud:** https://cloud.ibm.com/docs
+- **Alibaba Cloud:** https://www.alibabacloud.com/help/
+- **Hetzner:** https://docs.hetzner.com/
+
+#### Monitoring and Observability
+
+- **Prometheus:** https://prometheus.io/docs/
+- **Grafana:** https://grafana.com/docs/
+- **Datadog:** https://docs.datadoghq.com/
+- **New Relic:** https://docs.newrelic.com/
+- **OpenTelemetry:** https://opentelemetry.io/docs/
+- **Jaeger:** https://www.jaegertracing.io/docs/
+- **Dynatrace:** https://docs.dynatrace.com/
+- **Zabbix:** https://www.zabbix.com/documentation/current/en/manual
+
+#### Logging
+
+- **Elasticsearch:** https://www.elastic.co/docs
+- **Logstash:** https://www.elastic.co/docs/reference/logstash
+- **Kibana:** https://www.elastic.co/docs/explore-analyze
+- **Loki:** https://grafana.com/docs/loki/latest/
+- **Fluentd:** https://docs.fluentd.org/
+- **Fluent Bit:** https://docs.fluentbit.io/
+- **Splunk:** https://docs.splunk.com/
+- **Elastic Beats:** https://www.elastic.co/docs/reference/beats
+
+#### Networking and Ingress
+
+- **NGINX:** https://nginx.org/en/docs/
+- **HAProxy:** https://www.haproxy.org/#docs
+- **Traefik:** https://doc.traefik.io/traefik/
+- **Cilium:** https://docs.cilium.io/
+- **Calico:** https://docs.tigera.io/calico/latest/about
+- **CoreDNS:** https://coredns.io/manual/toc/
+- **Cloudflare:** https://developers.cloudflare.com/
+- **WireGuard:** https://www.wireguard.com/quickstart/
+
+#### Service Mesh and Traffic
+
+- **Istio:** https://istio.io/latest/docs/
+- **Linkerd:** https://linkerd.io/2/overview/
+- **Consul:** https://developer.hashicorp.com/consul/docs
+- **Envoy:** https://www.envoyproxy.io/docs
+- **Kuma:** https://kuma.io/docs/
+- **Kong Gateway:** https://developer.konghq.com/gateway/
+- **Envoy Gateway:** https://gateway.envoyproxy.io/docs/
+- **cert-manager:** https://cert-manager.io/docs/
+
+#### Databases and Data Stores
+
+- **PostgreSQL:** https://www.postgresql.org/docs/
+- **MySQL:** https://dev.mysql.com/doc/
+- **MongoDB:** https://www.mongodb.com/docs/
+- **Redis:** https://redis.io/docs/latest/
+- **Cassandra:** https://cassandra.apache.org/doc/latest/
+- **MariaDB:** https://mariadb.com/docs/
+- **SQLite:** https://www.sqlite.org/docs.html
+- **ClickHouse:** https://clickhouse.com/docs
+
+#### Queues and Streaming
+
+- **RabbitMQ:** https://www.rabbitmq.com/docs
+- **Apache Kafka:** https://kafka.apache.org/documentation/
+- **NATS:** https://docs.nats.io/
+- **Apache Pulsar:** https://pulsar.apache.org/docs/
+- **Redis Streams:** https://redis.io/docs/latest/develop/data-types/streams/
+- **Apache Spark:** https://spark.apache.org/docs/latest/
+- **Apache Flink:** https://nightlies.apache.org/flink/flink-docs-stable/
+- **ActiveMQ:** https://activemq.apache.org/components/
+
+#### Security and Secrets
+
+- **Vault:** https://developer.hashicorp.com/vault/docs
+- **Keycloak:** https://www.keycloak.org/documentation
+- **Trivy:** https://trivy.dev/
+- **Falco:** https://falco.org/docs/
+- **SOPS:** https://getsops.io/docs/
+- **Sigstore:** https://docs.sigstore.dev/
+- **Kyverno:** https://kyverno.io/docs/
+- **Open Policy Agent:** https://www.openpolicyagent.org/docs/
+
+#### Artifact and Package Management
+
+- **Harbor:** https://goharbor.io/docs/
+- **JFrog Artifactory:** https://jfrog.com/help/
+- **Nexus Repository:** https://help.sonatype.com/en/sonatype-nexus-repository.html
+- **Docker Hub:** https://docs.docker.com/docker-hub/
+- **GitHub Packages:** https://docs.github.com/en/packages
+- **GitLab Registry:** https://docs.gitlab.com/user/packages/container_registry/
+- **Helm Charts:** https://helm.sh/docs/topics/charts/
+- **NuGet:** https://learn.microsoft.com/en-us/nuget/
+
+#### Collaboration and Planning
+
+- **Jira:** https://support.atlassian.com/jira-software-cloud/
+- **Confluence:** https://support.atlassian.com/confluence/
+- **Slack:** https://docs.slack.dev/
+- **Microsoft Teams:** https://learn.microsoft.com/en-us/microsoftteams/
+- **Trello:** https://support.atlassian.com/trello/
+- **Notion:** https://developers.notion.com/
+- **Linear:** https://linear.app/docs
+- **Mattermost:** https://docs.mattermost.com/
+
+#### Scripting and Automation
+
+- **Bash:** https://www.gnu.org/software/bash/manual/
+- **Python:** https://docs.python.org/3/
+- **PowerShell:** https://learn.microsoft.com/en-us/powershell/
+- **Go:** https://go.dev/doc/
+- **Perl:** https://perldoc.perl.org/
+- **Ruby:** https://www.ruby-lang.org/en/documentation/
+- **Node.js:** https://nodejs.org/en/learn
+- **GNU Make:** https://www.gnu.org/software/make/manual/
+
+#### GitOps and Platforms
+
+- **Argo CD:** https://argo-cd.readthedocs.io/en/stable/
+- **Flux:** https://fluxcd.io/flux/
+- **Tekton:** https://tekton.dev/docs/
+- **Backstage:** https://backstage.io/docs/
+- **Apache Airflow:** https://airflow.apache.org/docs/
+- **SonarQube:** https://docs.sonarsource.com/sonarqube-server/
+- **Kubeflow:** https://www.kubeflow.org/docs/
+- **Crossplane:** https://docs.crossplane.io/
+
+#### Build and Testing
+
+- **Maven:** https://maven.apache.org/guides/
+- **Gradle:** https://docs.gradle.org/
+- **Bazel:** https://bazel.build/docs
+- **npm:** https://docs.npmjs.com/
+- **pytest:** https://docs.pytest.org/
+- **Playwright:** https://playwright.dev/docs/intro
+- **k6:** https://grafana.com/docs/k6/latest/
+- **Cypress:** https://docs.cypress.io/
+
+</details>
 
 [Back to contents](#contents)
 
@@ -869,71 +1109,198 @@ Before investing in a course, inspect the syllabus, last update, prerequisites, 
 
 <a id="videos"></a>
 
-## YouTube videos, full courses, and conference talks
+## YouTube videos and full courses
 
-Watch actively: take notes, reproduce the example, change a constraint, induce a failure, and explain the result. Older videos remain useful for concepts, but compare commands and manifests with the current official documentation.
+### The DevOps World YouTube watchlist
 
-### Start with these full courses
+Start with these selected courses and tutorials for clear explanations, practical learning, and deeper engineering judgment. Every link below opens a specific YouTube video.
 
-| Topic | Video | What to practice after watching |
-| --- | --- | --- |
-| Docker | TechWorld with Nana, Docker Tutorial for Beginners: https://www.youtube.com/watch?v=3c-iBn73dDE | Build a small image; compare layers; test graceful shutdown |
-| Kubernetes | TechWorld with Nana, Kubernetes Tutorial for Beginners: https://www.youtube.com/watch?v=X48VuDVv0do | Deploy locally; inspect events; break a selector and repair it |
-| Linux | freeCodeCamp, Linux Operating System — Crash Course for Beginners: https://www.youtube.com/watch?v=ROjZy1WbCIA | Trace processes, permissions, services, and log files |
-| Git and GitHub | freeCodeCamp, Git and GitHub for Beginners: https://www.youtube.com/watch?v=RGOj5yH7evk | Resolve a conflict and review a pull request |
-| Terraform | freeCodeCamp, Terraform Course: https://www.youtube.com/watch?v=SLB_c_ayRMo | Review a plan, understand state, and destroy your lab resources |
+### Linux and networking
 
-These are specific course selections, not claims that the videos reflect the latest releases. External video availability and captions can change.
+#### Linux Operating System — Crash Course for Beginners
 
-### Channels and libraries by learning goal
+**Creator:** freeCodeCamp  
+**Watch:** https://www.youtube.com/watch?v=ROjZy1WbCIA
 
-| Publisher | Strength | Channel or video library |
-| --- | --- | --- |
-| TechWorld with Nana | Accessible DevOps, containers, and delivery walkthroughs | https://www.youtube.com/@TechWorldwithNana |
-| KodeKloud | Linux, Kubernetes, and practical administration | https://www.youtube.com/@KodeKloud |
-| freeCodeCamp | Long-form programming and infrastructure courses | https://www.youtube.com/@freecodecamp |
-| CNCF | KubeCon talks, maintainers, and production case studies | https://www.youtube.com/@cncf |
-| Google Cloud Tech | Cloud architecture, operations, and reliability topics | https://www.youtube.com/@googlecloudtech |
-| AWS Events | Architecture and operational conference sessions | https://www.youtube.com/@AWSEventsChannel |
-| Microsoft Azure | Azure service explanations and demonstrations | https://www.youtube.com/@MicrosoftAzure |
-| HashiCorp | Infrastructure workflows and product demonstrations | https://www.youtube.com/@HashiCorp |
-| Grafana | Observability demonstrations and community talks | https://www.youtube.com/@Grafana |
-| DevOps Toolkit | Platform engineering and cloud-native comparisons | https://www.youtube.com/@DevOpsToolkit |
-| Bret Fisher | Containers and practical operations discussions | https://www.youtube.com/@BretFisher |
-| Jeff Geerling | Ansible, Linux, infrastructure, and homelab engineering | https://www.youtube.com/@JeffGeerling |
-| Google SRE | Reliability talks curated by Google | https://sre.google/resources/ |
+Build a foundation in Linux processes, files, permissions, and everyday system work.
 
-### A useful viewing sequence
+**Put it into practice:** Run a service, inspect its logs, and diagnose a permission failure.
 
-1. Linux and Git fundamentals: produce a troubleshooting note and a reviewed change.
-2. Containers: build and run your own small service.
-3. CI and infrastructure: automate a tested artifact and inspect a provisioning plan.
-4. Kubernetes: understand workloads and networking before adding a service mesh.
-5. Observability: define a user symptom and use telemetry to investigate it.
-6. Conference talks: compare a production case study with your own constraints.
+#### Computer Networking Fundamentals
 
-For senior preparation, seek talks about outages, migrations, capacity, control planes, identity, and recovery. Ask which assumptions would fail in your organization; conference architecture is context-dependent.
+**Creator:** freeCodeCamp  
+**Watch:** https://www.youtube.com/watch?v=fQbBPa0ADvs
 
-#### More video learning paths
+Develop a structured understanding of addressing, protocols, routing, and network behavior.
 
-| Topic | Creator or course | URL | Apply it by doing this |
-| --- | --- | --- | --- |
-| Python foundation | freeCodeCamp Python for Beginners | https://www.youtube.com/watch?v=rfscVS0vtbw | Write an API client with input validation and tests |
-| Ansible concepts | TechWorld with Nana: Ansible and playbooks | https://www.youtube.com/watch?v=1id6ERvfozo | Automate a small service configuration idempotently |
-| Networking | freeCodeCamp Computer Networking Fundamentals | https://www.youtube.com/watch?v=fQbBPa0ADvs | Explain a connection failure using a request-path diagram |
-| Jenkins delivery | freeCodeCamp CI/CD in Production with Jenkins | https://www.youtube.com/watch?v=uHNOqKdqQas | Build a small pipeline and diagnose a failed stage |
-| Azure and architecture | John Savill's Technical Training | https://www.youtube.com/@NTFAQGuy | Explain one identity and networking design decision |
-| DevOps projects | Abhishek Veeramalla | https://www.youtube.com/@AbhishekVeeramalla | Rebuild a project with your own requirements |
-| Cloud-native engineering | Anton Putra | https://www.youtube.com/@AntonPutra | Compare an implementation with its official documentation |
-| Containers and delivery | That DevOps Guy | https://www.youtube.com/@MarcelDempers | Reproduce a deployment and document its failure behavior |
-| Networking explanations | Practical Networking | https://www.youtube.com/@PracticalNetworking | Trace routing, address translation, and return traffic |
-| Systems engineering | USENIX conference videos | https://www.usenix.org/conferences | Discuss assumptions and failure modes from a case study |
-| Cloud-native conferences | CNCF playlists | https://www.youtube.com/@cncf/playlists | Study one production outage or migration in depth |
-| Reliability | Google SRE video resources | https://sre.google/resources/ | Turn one reliability principle into a test in your project |
+**Put it into practice:** Draw a request path and explain a connection timeout at each layer.
 
-#### Turn a video into a finished learning artifact
+### Git and automation
 
-For each course, record the versions used, build a minimal reproduction, change one assumption, and explain the result. Keep the source link, your own notes, and the resulting project together. Prefer a small project you understand over a copied stack you cannot troubleshoot.
+#### Git and GitHub for Beginners — Crash Course
+
+**Creator:** freeCodeCamp  
+**Watch:** https://www.youtube.com/watch?v=RGOj5yH7evk
+
+Learn the source-control workflow needed for reviews, collaboration, and repeatable delivery.
+
+**Put it into practice:** Create a branch, open a pull request, resolve a conflict, and revert a change.
+
+#### Bash Scripting Tutorial for Beginners
+
+**Creator:** freeCodeCamp  
+**Watch:** https://www.youtube.com/watch?v=tK9Oc6AEnR4
+
+Learn shell scripting through variables, arguments, control flow, functions, and exit behavior.
+
+**Put it into practice:** Write a health-check script with a timeout and clear failure status.
+
+#### Learn Python — Full Course for Beginners
+
+**Creator:** freeCodeCamp  
+**Watch:** https://www.youtube.com/watch?v=rfscVS0vtbw
+
+Build programming fundamentals before writing larger operational automation.
+
+**Put it into practice:** Create an API inventory script with validation and meaningful error handling.
+
+### Containers and Kubernetes
+
+#### Docker Tutorial for Beginners
+
+**Creator:** TechWorld with Nana  
+**Watch:** https://www.youtube.com/watch?v=3c-iBn73dDE
+
+Understand containers, images, registries, and the basic development workflow.
+
+**Put it into practice:** Build an application image, configure its runtime, and test graceful shutdown.
+
+#### Kubernetes Tutorial for Beginners — Full Course
+
+**Creator:** TechWorld with Nana  
+**Watch:** https://www.youtube.com/watch?v=X48VuDVv0do
+
+Connect Kubernetes concepts to deployments, services, configuration, and troubleshooting.
+
+**Put it into practice:** Deploy locally, break a selector or image reference, and recover from the evidence.
+
+### Infrastructure and delivery
+
+#### Terraform Course — Automate Your AWS Cloud Infrastructure
+
+**Creator:** freeCodeCamp  
+**Watch:** https://www.youtube.com/watch?v=SLB_c_ayRMo
+
+Learn infrastructure-as-code workflows through a concrete cloud example.
+
+**Put it into practice:** Inspect a plan, explain state, detect drift, and verify teardown.
+
+#### What Is Ansible? Ansible Playbook Explained
+
+**Creator:** TechWorld with Nana  
+**Watch:** https://www.youtube.com/watch?v=1id6ERvfozo
+
+Understand inventories, modules, playbooks, and configuration automation.
+
+**Put it into practice:** Configure a small service repeatedly without creating duplicate effects.
+
+#### GitHub Actions Tutorial — Basic Concepts and CI/CD Pipeline with Docker
+
+**Creator:** TechWorld with Nana  
+**Watch:** https://www.youtube.com/watch?v=R8_veQiYBjI
+
+Follow workflows, jobs, and a container-oriented delivery example.
+
+**Put it into practice:** Create a pipeline whose failed tests block artifact promotion.
+
+#### CI/CD in Production with Jenkins
+
+**Creator:** freeCodeCamp  
+**Watch:** https://www.youtube.com/watch?v=uHNOqKdqQas
+
+Work through Jenkins, pipeline construction, application delivery, and security-oriented workflows.
+
+**Put it into practice:** Build a small pipeline, induce a failure, and explain the release authority.
+
+### Cloud architecture
+
+#### AWS Certified Solutions Architect — Associate Full Course
+
+**Creator:** freeCodeCamp / Andrew Brown  
+**Watch:** https://www.youtube.com/watch?v=c3Cn4xYfxJY
+
+Develop broad AWS architecture knowledge across identity, networks, compute, storage, and managed services.
+
+**Put it into practice:** Design a small service and justify availability, access, and cost choices.
+
+#### Azure Master Class v3 — Part 1: Cloud and Microsoft Azure 101
+
+**Creator:** John Savill  
+**Watch:** https://www.youtube.com/watch?v=BqNbzeuxTaE
+
+Build a clear foundation for understanding cloud and Azure architecture.
+
+**Put it into practice:** Explain the organization, identity, and resource boundaries of an Azure project.
+
+#### Deploy a Website on Google Cloud Platform with Terraform
+
+**Creator:** freeCodeCamp / Rishab Kumar  
+**Watch:** https://www.youtube.com/watch?v=VCayKl82Lt8
+
+Connect infrastructure definitions to a practical Google Cloud deployment.
+
+**Put it into practice:** Reproduce a small deployment, review its exposure, and remove its resources.
+
+### Observability
+
+#### How Prometheus Monitoring Works — Prometheus Architecture Explained
+
+**Creator:** TechWorld with Nana  
+**Watch:** https://www.youtube.com/watch?v=h4Sl21AKiDg
+
+Understand targets, metric collection, and the roles of Prometheus components.
+
+**Put it into practice:** Choose useful application metrics and explain how they reach an alert.
+
+### System design and senior interviews
+
+#### System Design for Beginners Course
+
+**Creator:** freeCodeCamp  
+**Watch:** https://www.youtube.com/watch?v=m8Icp_Cid5o
+
+Learn to connect requirements, architecture, data, protocols, and design tradeoffs.
+
+**Put it into practice:** Design one service and identify its bottlenecks and failure boundaries.
+
+#### System Design Concepts Course and Interview Prep
+
+**Creator:** freeCodeCamp  
+**Watch:** https://www.youtube.com/watch?v=F2FmTdLtb_4
+
+Organize architectural reasoning for system-design interview discussions.
+
+**Put it into practice:** Practice a design interview with explicit assumptions, alternatives, and constraints.
+
+#### Design Software Systems Like a Senior Engineer — Complete Course
+
+**Creator:** freeCodeCamp  
+**Watch:** https://www.youtube.com/watch?v=soTfFFIQQ8U
+
+Practice a structured approach to large-system requirements, capacity, and architectural choices.
+
+**Put it into practice:** Explain an end-to-end design, then revise it after a changed requirement.
+
+### A focused viewing order
+
+1. Linux, networking, and Git.
+2. Bash or Python automation.
+3. Docker and a small application.
+4. CI/CD and infrastructure as code.
+5. One cloud, then Kubernetes when the project needs it.
+6. Monitoring, failure diagnosis, and system design.
+
+For each video, reproduce a small example, change one assumption, and explain the result. Compare version-sensitive commands and exam material with the current official documentation.
 
 [Back to contents](#contents)
 

@@ -150,3 +150,29 @@ CNCF artwork: https://github.com/cncf/artwork — usage guidelines in [LICENSE.c
 | Vault | https://raw.githubusercontent.com/devicons/devicon/master/icons/vault/vault-original.svg |
 | WireGuard | https://raw.githubusercontent.com/devicons/devicon/master/icons/wireguard/wireguard-original.svg |
 | Zabbix | https://raw.githubusercontent.com/zabbix/zabbix/master/misc/images/docs/zabbix_logo.svg |
+
+## Additional tool artwork
+
+Syft and Grype marks: Anchore; shared by the projects under Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/ . Cloud service marks belong to AWS, Microsoft, and Google. Azure Key Vault artwork is distributed through https://github.com/benc-uk/icon-collection .
+
+| Mark | Artwork source |
+| --- | --- |
+| apachejmeter | https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/apachejmeter.svg |
+| awssecretsmanager | https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist/SecurityIdentityCompliance/SecretsManager.png |
+| azurekeyvault | https://raw.githubusercontent.com/benc-uk/icon-collection/master/azure-icons/Key-Vaults.svg |
+| chaosmesh | https://raw.githubusercontent.com/cncf/artwork/main/projects/chaosmesh/icon/color/chaosmesh-icon-color.svg |
+| cosign | https://raw.githubusercontent.com/sigstore/community/main/artwork/cosign/horizontal/color/sigstore_cosign-horizontal-color.svg |
+| googlesecretmanager | https://services.google.com/fh/files/misc/google-cloud-legacy-icons.zip |
+| grype | https://user-images.githubusercontent.com/5199289/136855393-d0a9eef9-ccf1-4e2b-9d7c-7aad16a567e5.png |
+| infracost | https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/infracost.svg |
+| k9s | https://k9scli.io/assets/k9s.png |
+| kind | https://kind.sigs.k8s.io/logo/logo.svg |
+| kustomize | https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/site/static/favicons/pwa-512x512.png |
+| locust | https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/locust.svg |
+| minikube | https://raw.githubusercontent.com/kubernetes/minikube/master/images/logo/logo.svg |
+| opencost | https://raw.githubusercontent.com/cncf/artwork/main/projects/opencost/icon/color/Opencost_Icon_Color.svg |
+| pgbackrest | https://pgbackrest.org/logo.svg |
+| renovate | https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/renovate.svg |
+| restic | https://restic.net/apple-touch-icon-144-precomposed.png |
+| syft | https://user-images.githubusercontent.com/5199289/136844524-1527b09f-c5cb-4aa9-be54-5aa92a6086c1.png |
+| velero | https://raw.githubusercontent.com/cncf/artwork/main/projects/velero/icon/color/velero-icon-color.svg |

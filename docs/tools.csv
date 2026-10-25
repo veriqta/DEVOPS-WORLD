@@ -1,0 +1,103 @@
+Category,Tool,Official documentation URL
+Foundations,Linux,https://www.kernel.org/doc/html/latest/
+Foundations,GNU Bash,https://www.gnu.org/software/bash/manual/
+Foundations,Git,https://git-scm.com/doc
+Foundations,OpenSSH,https://www.openssh.com/manual.html
+Foundations,Python,https://docs.python.org/3/
+Foundations,Go,https://go.dev/doc/
+Foundations,PowerShell,https://learn.microsoft.com/en-us/powershell/
+Foundations,curl,https://curl.se/docs/
+Foundations,systemd,https://www.freedesktop.org/software/systemd/man/latest/
+Foundations,Ansible,https://docs.ansible.com/
+Cloud and Networking,AWS,https://docs.aws.amazon.com/
+Cloud and Networking,Microsoft Azure,https://learn.microsoft.com/en-us/azure/
+Cloud and Networking,Google Cloud,https://cloud.google.com/docs
+Cloud and Networking,Cloudflare,https://developers.cloudflare.com/
+Cloud and Networking,Terraform,https://developer.hashicorp.com/terraform/docs
+Cloud and Networking,OpenTofu,https://opentofu.org/docs/
+Cloud and Networking,Pulumi,https://www.pulumi.com/docs/
+Cloud and Networking,Packer,https://developer.hashicorp.com/packer/docs
+Cloud and Networking,Vault,https://developer.hashicorp.com/vault/docs
+Cloud and Networking,Consul,https://developer.hashicorp.com/consul/docs
+Containers and Kubernetes,Docker,https://docs.docker.com/
+Containers and Kubernetes,Podman,https://docs.podman.io/
+Containers and Kubernetes,containerd,https://containerd.io/docs/
+Containers and Kubernetes,Kubernetes,https://kubernetes.io/docs/
+Containers and Kubernetes,Helm,https://helm.sh/docs/
+Containers and Kubernetes,Kustomize,https://kubectl.docs.kubernetes.io/references/kustomize/
+Containers and Kubernetes,kind,https://kind.sigs.k8s.io/
+Containers and Kubernetes,minikube,https://minikube.sigs.k8s.io/docs/
+Containers and Kubernetes,K3s,https://docs.k3s.io/
+Containers and Kubernetes,Cilium,https://docs.cilium.io/
+Containers and Kubernetes,Istio,https://istio.io/latest/docs/
+Containers and Kubernetes,Linkerd,https://linkerd.io/2/overview/
+Containers and Kubernetes,cert-manager,https://cert-manager.io/docs/
+Containers and Kubernetes,External Secrets Operator,https://external-secrets.io/latest/
+Containers and Kubernetes,Karpenter,https://karpenter.sh/docs/
+Containers and Kubernetes,Crossplane,https://docs.crossplane.io/
+CI CD and GitOps,GitHub Actions,https://docs.github.com/en/actions
+CI CD and GitOps,GitLab CI/CD,https://docs.gitlab.com/ci/
+CI CD and GitOps,Jenkins,https://www.jenkins.io/doc/
+CI CD and GitOps,CircleCI,https://circleci.com/docs/
+CI CD and GitOps,Tekton,https://tekton.dev/docs/
+CI CD and GitOps,Argo CD,https://argo-cd.readthedocs.io/en/stable/
+CI CD and GitOps,Argo Rollouts,https://argo-rollouts.readthedocs.io/
+CI CD and GitOps,Flux,https://fluxcd.io/flux/
+CI CD and GitOps,Spinnaker,https://spinnaker.io/docs/
+CI CD and GitOps,Dagger,https://docs.dagger.io/
+CI CD and GitOps,Renovate,https://docs.renovatebot.com/
+Observability and Incident Response,Prometheus,https://prometheus.io/docs/
+Observability and Incident Response,Grafana,https://grafana.com/docs/
+Observability and Incident Response,Loki,https://grafana.com/docs/loki/latest/
+Observability and Incident Response,Tempo,https://grafana.com/docs/tempo/latest/
+Observability and Incident Response,OpenTelemetry,https://opentelemetry.io/docs/
+Observability and Incident Response,Jaeger,https://www.jaegertracing.io/docs/
+Observability and Incident Response,Alertmanager,https://prometheus.io/docs/alerting/latest/alertmanager/
+Observability and Incident Response,Elastic Stack,https://www.elastic.co/docs
+Observability and Incident Response,Datadog,https://docs.datadoghq.com/
+Observability and Incident Response,New Relic,https://docs.newrelic.com/
+Observability and Incident Response,Sentry,https://docs.sentry.io/
+Observability and Incident Response,PagerDuty,https://support.pagerduty.com/
+Observability and Incident Response,Thanos,https://thanos.io/tip/thanos/getting-started.md
+Observability and Incident Response,VictoriaMetrics,https://docs.victoriametrics.com/
+Security and Supply Chain,Trivy,https://trivy.dev/latest/docs/
+Security and Supply Chain,Grype,https://github.com/anchore/grype
+Security and Supply Chain,Syft,https://github.com/anchore/syft
+Security and Supply Chain,Cosign,https://docs.sigstore.dev/cosign/
+Security and Supply Chain,Falco,https://falco.org/docs/
+Security and Supply Chain,OPA,https://www.openpolicyagent.org/docs/
+Security and Supply Chain,Kyverno,https://kyverno.io/docs/
+Security and Supply Chain,Checkov,https://www.checkov.io/1.Welcome/What%20is%20Checkov.html
+Security and Supply Chain,Gitleaks,https://github.com/gitleaks/gitleaks
+Security and Supply Chain,SOPS,https://getsops.io/docs/
+Security and Supply Chain,OWASP ZAP,https://www.zaproxy.org/docs/
+Security and Supply Chain,SonarQube,https://docs.sonarsource.com/sonarqube-server/
+Security and Supply Chain,Dependency-Track,https://docs.dependencytrack.org/
+Databases and Messaging,PostgreSQL,https://www.postgresql.org/docs/
+Databases and Messaging,MySQL,https://dev.mysql.com/doc/
+Databases and Messaging,Redis,https://redis.io/docs/latest/
+Databases and Messaging,MongoDB,https://www.mongodb.com/docs/
+Databases and Messaging,Apache Kafka,https://kafka.apache.org/documentation/
+Databases and Messaging,RabbitMQ,https://www.rabbitmq.com/docs
+Databases and Messaging,etcd,https://etcd.io/docs/
+Databases and Messaging,Elasticsearch,https://www.elastic.co/docs/reference/elasticsearch
+Databases and Messaging,NATS,https://docs.nats.io/
+Testing and Performance,k6,https://grafana.com/docs/k6/latest/
+Testing and Performance,Locust,https://docs.locust.io/
+Testing and Performance,Apache JMeter,https://jmeter.apache.org/usermanual/
+Testing and Performance,Terratest,https://terratest.gruntwork.io/
+Testing and Performance,Testcontainers,https://testcontainers.com/
+Testing and Performance,Chaos Mesh,https://chaos-mesh.org/docs/
+Testing and Performance,Litmus,https://docs.litmuschaos.io/
+Testing and Performance,Pact,https://docs.pact.io/
+Platform and Developer Experience,Backstage,https://backstage.io/docs/
+Platform and Developer Experience,Harbor,https://goharbor.io/docs/
+Platform and Developer Experience,Nexus Repository,https://help.sonatype.com/
+Platform and Developer Experience,JFrog Artifactory,https://jfrog.com/help/
+Platform and Developer Experience,Envoy,https://www.envoyproxy.io/docs/envoy/latest/
+Platform and Developer Experience,NGINX,https://nginx.org/en/docs/
+Platform and Developer Experience,Traefik,https://doc.traefik.io/traefik/
+Platform and Developer Experience,OpenCost,https://opencost.io/docs/
+Platform and Developer Experience,Kubecost,https://www.ibm.com/docs/en/kubecost
+Platform and Developer Experience,Apache Airflow,https://airflow.apache.org/docs/
+Platform and Developer Experience,Temporal,https://docs.temporal.io/

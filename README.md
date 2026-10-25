@@ -8,9 +8,103 @@
 
 <a id="contents"></a>
 
-[Tools](#tool-directory) · [Roadmap](#roadmap) · [Learning](#learning) · [YouTube](#videos) · [Certifications](#certifications) · [Interviews](#interviews) · [Resumes](#careers) · [Projects](#projects) · [Books & communities](#community)
+[Roadmap](#roadmap) · [Tools](#tool-directory) · [Learning](#learning) · [YouTube](#videos) · [Certifications](#certifications) · [Interviews](#interviews) · [Resumes](#careers) · [Projects](#projects) · [Books & communities](#community)
 
-<p align="center"><a href="assets/veriqta-devops-world.svg"><img src="assets/veriqta-devops-world.svg" width="300" alt="Veriqta DevOps World roadmap"></a></p>
+<a id="roadmap"></a>
+
+## DevOps roadmap
+
+A suggested path, with side branches for skills to practice at each stage.
+
+```mermaid
+flowchart TB
+    START["DEVOPS WORLD<br/>Engineering learning roadmap"]
+    START --> SYS["01 · Systems foundations"]
+    SYS -.-> OS["Linux administration<br/>Users · permissions · processes<br/>Storage · services · package management"]
+    SYS -.-> NET["Networking fundamentals<br/>IP addressing · routing · DNS<br/>HTTP · TLS · proxies · load balancing"]
+    SYS --> CODE["02 · Programming and automation"]
+    CODE -.-> LANG["Choose a programming language<br/>Python or Go<br/>Data structures · APIs · error handling"]
+    CODE -.-> SHELL["Shell and terminal skills<br/>Bash or PowerShell<br/>Quoting · exit codes · text processing"]
+    CODE --> VCS["03 · Source control and collaboration"]
+    VCS -.-> GIT["Git workflows<br/>Branches · commits · reviews<br/>Conflicts · tags · reverting changes"]
+    VCS -.-> TEST["Engineering habits<br/>Readable code · useful tests<br/>Documentation · small changes"]
+    VCS --> APP["04 · Understand an application"]
+    APP -.-> RUNTIME["Runtime behavior<br/>Configuration · dependencies<br/>Health endpoints · graceful shutdown"]
+    APP -.-> DATA["State and communication<br/>Databases · caches · queues<br/>Transactions · retries · idempotency"]
+    APP --> PACK["05 · Package and run software"]
+    PACK -.-> IMAGE["Container images<br/>Build context · layers · registries<br/>Dependency pinning · non-root users"]
+    PACK -.-> LOCAL["Local environments<br/>Multi-container applications<br/>Networking · volumes · resource limits"]
+    PACK --> CLOUD["06 · Learn one cloud deeply"]
+    CLOUD -.-> CLOUDCORE["Cloud building blocks<br/>Identity · private networks · compute<br/>Object storage · managed databases"]
+    CLOUD -.-> CLOUDOPS["Cloud operating model<br/>Accounts · budgets · quotas<br/>Audit logs · availability · shared responsibility"]
+    CLOUD --> IAC["07 · Infrastructure as code"]
+    IAC -.-> PROVISION["Provisioning workflow<br/>Plans · modules · providers<br/>State · locking · imports · drift"]
+    IAC -.-> CONFIG["Configuration automation<br/>Desired state · idempotency<br/>Testing · secrets · controlled changes"]
+    IAC --> DELIVERY["08 · Continuous integration and delivery"]
+    DELIVERY -.-> PIPE["Build a trusted pipeline<br/>Tests · artifacts · provenance<br/>Scoped identities · protected environments"]
+    DELIVERY -.-> RELEASE["Release safely<br/>Promote the same artifact<br/>Rolling updates · canaries · rollback"]
+    DELIVERY --> KUBE["09 · Orchestration when the workload needs it"]
+    KUBE -.-> WORKLOAD["Kubernetes workloads<br/>Pods · controllers · scheduling<br/>Services · probes · persistent storage"]
+    KUBE -.-> CLUSTER["Cluster operations<br/>RBAC · network policy · upgrades<br/>Capacity · troubleshooting · tenancy"]
+    KUBE --> GITOPS["10 · Declarative delivery and reconciliation"]
+    GITOPS -.-> DESIRED["GitOps workflow<br/>Reviewed desired state<br/>Drift · reconciliation · emergency recovery"]
+    GITOPS -.-> CONFIGURATION["Application configuration<br/>Charts or overlays<br/>Versioning · promotion · compatibility"]
+    GITOPS --> OBS["11 · Observe the user journey"]
+    OBS -.-> SIGNAL["Useful telemetry<br/>Metrics · logs · traces<br/>Instrumentation · correlation · cardinality"]
+    OBS -.-> SLO["Reliability objectives<br/>SLIs · SLOs · error budgets<br/>Actionable alerts · runbooks"]
+    OBS --> SECURITY["12 · Secure the lifecycle"]
+    SECURITY -.-> IDENTITY["Access and secrets<br/>Least privilege · workload identity<br/>Rotation · revocation · auditability"]
+    SECURITY -.-> SUPPLY["Software supply chain<br/>SBOMs · scanning · signing<br/>Verification · policy · exceptions"]
+    SECURITY --> RESILIENCE["13 · Test failure and recovery"]
+    RESILIENCE -.-> RECOVER["Recover state and services<br/>Backups · restore tests · RTO · RPO<br/>Dependencies · keys · recovery order"]
+    RESILIENCE -.-> CAPACITY["Performance and resilience<br/>Load testing · capacity planning<br/>Controlled failure · graceful degradation"]
+    RESILIENCE --> PLATFORM["14 · Build sustainable capabilities"]
+    PLATFORM -.-> DEVEX["Platform engineering<br/>Golden paths · self-service<br/>Ownership · support · developer feedback"]
+    PLATFORM -.-> COST["FinOps and efficiency<br/>Allocation · unit cost · estimates<br/>Rightsizing · retention · realized savings"]
+    PLATFORM --> SENIOR["15 · Grow engineering judgment"]
+    SENIOR -.-> DESIGN["Architecture and migrations<br/>Constraints · consistency · failure domains<br/>Alternatives · staged change · decision records"]
+    SENIOR -.-> LEAD["Technical leadership<br/>Incident coordination · mentoring<br/>Clear communication · prioritization"]
+    SENIOR --> SPECIALIZE["Choose a specialization and keep practicing"]
+    SPECIALIZE -.-> TRACKS["SRE · cloud engineering · platform engineering<br/>DevSecOps · data platforms · MLOps"]
+    SPECIALIZE --> EVIDENCE["Build → test → observe → recover → explain → improve"]
+    OS --> CODE
+    NET --> CODE
+    LANG --> VCS
+    SHELL --> VCS
+    GIT --> APP
+    TEST --> APP
+    RUNTIME --> PACK
+    DATA --> PACK
+    IMAGE --> CLOUD
+    LOCAL --> CLOUD
+    CLOUDCORE --> IAC
+    CLOUDOPS --> IAC
+    PROVISION --> DELIVERY
+    CONFIG --> DELIVERY
+    PIPE --> KUBE
+    RELEASE --> KUBE
+    WORKLOAD --> GITOPS
+    CLUSTER --> GITOPS
+    DESIRED --> OBS
+    CONFIGURATION --> OBS
+    SIGNAL --> SECURITY
+    SLO --> SECURITY
+    IDENTITY --> RESILIENCE
+    SUPPLY --> RESILIENCE
+    RECOVER --> PLATFORM
+    CAPACITY --> PLATFORM
+    DEVEX --> SENIOR
+    COST --> SENIOR
+    DESIGN --> SPECIALIZE
+    LEAD --> SPECIALIZE
+    TRACKS --> EVIDENCE
+    classDef stage fill:#10324a,stroke:#32b8c6,color:#ffffff,stroke-width:2px;
+    classDef topic fill:#eaf5fa,stroke:#82acbc,color:#102b3d;
+    classDef milestone fill:#007d69,stroke:#006b5a,color:#ffffff,stroke-width:2px;
+    class SYS,CODE,VCS,APP,PACK,CLOUD,IAC,DELIVERY,KUBE,GITOPS,OBS,SECURITY,RESILIENCE,PLATFORM,SENIOR stage;
+    class OS,NET,LANG,SHELL,GIT,TEST,RUNTIME,DATA,IMAGE,LOCAL,CLOUDCORE,CLOUDOPS,PROVISION,CONFIG,PIPE,RELEASE,WORKLOAD,CLUSTER,DESIRED,CONFIGURATION,SIGNAL,SLO,IDENTITY,SUPPLY,RECOVER,CAPACITY,DEVEX,COST,DESIGN,LEAD,TRACKS topic;
+    class START,SPECIALIZE,EVIDENCE milestone;
+```
 
 <a id="tool-directory"></a>
 
@@ -260,19 +354,38 @@ Click a logo or **Docs ↗** to open the official documentation.
 
 [Back to contents](#contents)
 
-<a id="roadmap"></a>
-
-## DevOps roadmap
-
-**Start here:** Linux → networking → Git → scripting → containers → CI/CD → cloud → infrastructure as code → Kubernetes → observability → security → reliability.
-
-- Interactive roadmap: https://roadmap.sh/devops
-
-[Back to contents](#contents)
-
 <a id="learning"></a>
 
 ## Learning websites and labs
+
+<details>
+<summary><strong>Browse learning topics</strong></summary>
+
+- [Linux and system administration](#learning-topic-01)
+- [Networking, DNS, HTTP, and TLS](#learning-topic-02)
+- [Git, collaboration, and code review](#learning-topic-03)
+- [Bash, Python, Go, and automation practice](#learning-topic-04)
+- [AWS architecture and hands-on workshops](#learning-topic-05)
+- [Azure and Microsoft engineering](#learning-topic-06)
+- [Google Cloud engineering](#learning-topic-07)
+- [Containers, images, and build engineering](#learning-topic-08)
+- [Kubernetes learning and administration](#learning-topic-09)
+- [Infrastructure as code and configuration practice](#learning-topic-10)
+- [Continuous integration, delivery, and release practice](#learning-topic-11)
+- [GitOps and platform delivery](#learning-topic-12)
+- [Observability and production debugging](#learning-topic-13)
+- [Reliability, incidents, and distributed systems](#learning-topic-14)
+- [Security engineering and software supply chains](#learning-topic-15)
+- [Backup, storage, and data operations](#learning-topic-16)
+- [Performance testing and resilience experiments](#learning-topic-17)
+- [Platform engineering, cost, and sustainability](#learning-topic-18)
+- [AI infrastructure and MLOps learning](#learning-topic-19)
+- [Senior engineering, architecture, and design communication](#learning-topic-20)
+- [Additional project collections and engineering references](#learning-topic-21)
+
+</details>
+
+
 
 ### Foundations
 
@@ -308,6 +421,602 @@ Click a logo or **Docs ↗** to open the official documentation.
 - **CNCF Landscape** — ecosystem discovery: https://landscape.cncf.io/
 
 *Some platforms include paid courses or labs; cloud resources can incur charges.*
+
+
+### More learning paths, workshops, and technical reading
+
+<a id="learning-topic-01"></a>
+
+### Linux and system administration
+
+- **Linux From Scratch** — Understand how Linux systems are assembled by building a distribution from source.  
+  https://www.linuxfromscratch.org/
+- **Debian Administrator's Handbook** — Study package management, services, networking, security, and practical Linux administration workflows.  
+  https://debian-handbook.info/
+- **ArchWiki** — Investigate detailed configuration explanations and troubleshooting notes across Linux system components.  
+  https://wiki.archlinux.org/
+- **Ubuntu Server tutorials** — Follow guided exercises for servers, containers, security, storage, and cloud environments.  
+  https://ubuntu.com/tutorials
+- **Red Hat Developer learning** — Explore enterprise Linux, containers, automation, and application delivery through guided learning.  
+  https://developers.redhat.com/learn
+- **SUSE documentation portal** — Find enterprise Linux operational references for storage, networking, security, and services.  
+  https://documentation.suse.com/
+- **Linux man-pages project** — Look up system calls and utilities while diagnosing concrete operating-system behavior.  
+  https://man7.org/linux/man-pages/
+- **Brendan Gregg Linux performance** — Learn a systematic approach to identifying bottlenecks across Linux operating-system resources.  
+  https://www.brendangregg.com/linuxperf.html
+- **Brendan Gregg USE method** — Investigate utilization, saturation, and errors before guessing which resource causes slowness.  
+  https://www.brendangregg.com/usemethod.html
+- **Linux Performance Analysis in 60 Seconds** — See how operational engineers combine quick observations into a useful investigation.  
+  https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55
+- **The Linux Command Line** — Read a free shell book covering everyday commands and maintainable scripting.  
+  https://linuxcommand.org/tlcl.php
+- **Command Line Interface Guidelines** — Design automation interfaces with predictable behavior, helpful errors, and clear output.  
+  https://clig.dev/
+- **ExplainShell** — Break down shell commands into their documented options before running unfamiliar examples.  
+  https://explainshell.com/
+- **ShellCheck gallery** — Review common shell mistakes and improve the reliability of your automation scripts.  
+  https://www.shellcheck.net/
+
+<a id="learning-topic-02"></a>
+
+### Networking, DNS, HTTP, and TLS
+
+- **Beej's Guide to Network Programming** — Learn sockets and networking fundamentals through practical, low-level client and server examples.  
+  https://beej.us/guide/bgnet/
+- **Computer Networking: Principles, Protocols and Practice** — Study an open networking textbook connecting protocols, architecture, and system behavior.  
+  https://www.computer-networking.info/
+- **Cloudflare Learning Center** — Build clear mental models for DNS, encryption, caching, and network security.  
+  https://www.cloudflare.com/learning/
+- **MDN HTTP overview** — Understand the request-response model before debugging proxies, clients, and application servers.  
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+- **MDN HTTP status codes** — Distinguish response categories when diagnosing application errors and failed integration requests.  
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+- **MDN HTTP caching** — Learn cache behavior, validators, and freshness rules that affect production traffic.  
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching
+- **MDN TLS guide** — Understand transport encryption and the trust assumptions behind secure web connections.  
+  https://developer.mozilla.org/en-US/docs/Web/Security/Transport_Layer_Security
+- **Everything curl** — Explore HTTP clients, authentication, proxies, and transfer troubleshooting through detailed examples.  
+  https://everything.curl.dev/
+- **Wireshark User's Guide** — Learn packet inspection techniques for investigating protocol behavior and connection failures.  
+  https://www.wireshark.org/docs/wsug_html_chunked/
+- **Julia Evans networking articles** — Explore approachable explanations of networking behavior, debugging techniques, and common misconceptions.  
+  https://jvns.ca/categories/networking/
+- **How DNS Works** — Follow an illustrated explanation of DNS resolution before troubleshooting real resolver behavior.  
+  https://howdns.works/
+- **Let's Encrypt getting started** — Understand certificate issuance workflows and the practical requirements of HTTPS deployment.  
+  https://letsencrypt.org/getting-started/
+- **OpenSSL cookbook** — Practice certificate inspection and TLS troubleshooting with a dedicated technical reference.  
+  https://www.feistyduck.com/library/openssl-cookbook/
+- **BGP explained** — Understand routing between networks and why connectivity can fail beyond your application.  
+  https://www.cloudflare.com/learning/security/glossary/what-is-bgp/
+- **TCP/IP guide** — Explore protocol relationships and networking concepts through a broad technical reference.  
+  http://www.tcpipguide.com/
+
+<a id="learning-topic-03"></a>
+
+### Git, collaboration, and code review
+
+- **GitHub pull request guidance** — Learn review workflows, collaboration tools, and the mechanics of proposing source changes.  
+  https://docs.github.com/en/pull-requests
+- **GitHub Skills introduction** — Practice repository collaboration through a guided exercise that runs inside GitHub.  
+  https://github.com/skills/introduction-to-github
+- **Learn Git Branching** — Experiment visually with commits, branches, merges, and history before modifying shared repositories.  
+  https://learngitbranching.js.org/
+- **Git Immersion** — Work through small Git exercises that build confidence in everyday version-control operations.  
+  https://gitimmersion.com/
+- **Oh Shit, Git!?!** — Find understandable recovery examples for common mistakes in local Git workflows.  
+  https://ohshitgit.com/
+- **Atlassian Git tutorials** — Compare branching, merging, rebasing, and collaboration approaches with practical workflow explanations.  
+  https://www.atlassian.com/git/tutorials
+- **Google code review guidelines** — Study how reviewers evaluate changes and communicate actionable, constructive engineering feedback.  
+  https://google.github.io/eng-practices/review/
+- **Conventional Commits** — Use a documented commit-message convention when consistent change classification benefits your project.  
+  https://www.conventionalcommits.org/
+- **Semantic Versioning** — Understand compatibility promises and communicate the intended meaning of software version changes.  
+  https://semver.org/
+- **Keep a Changelog** — Create useful release notes that explain changes to people using your software.  
+  https://keepachangelog.com/
+- **GitHub release management** — Connect versions, tags, release notes, and downloadable artifacts in a public project.  
+  https://docs.github.com/en/repositories/releasing-projects-on-github
+- **Open Source Guides** — Learn contribution, maintenance, community-building, and governance practices for collaborative public projects.  
+  https://opensource.guide/
+
+<a id="learning-topic-04"></a>
+
+### Bash, Python, Go, and automation practice
+
+- **BashGuide** — Learn shell quoting, expansions, control flow, and the foundations of reliable scripts.  
+  https://mywiki.wooledge.org/BashGuide
+- **BashFAQ** — Investigate recurring shell problems before adopting fragile command-line workarounds in automation.  
+  https://mywiki.wooledge.org/BashFAQ
+- **Bash Pitfalls** — Recognize shell patterns that behave unexpectedly with filenames, quoting, and process output.  
+  https://mywiki.wooledge.org/BashPitfalls
+- **Bash Hackers Wiki** — Explore shell behavior and scripting details when a simple example stops working.  
+  https://bash-hackers.gabe565.com/
+- **Python packaging tutorial** — Package an automation tool so another engineer can install and run it reliably.  
+  https://packaging.python.org/en/latest/tutorials/packaging-projects/
+- **Python virtual environments** — Separate project dependencies and reproduce an automation environment without changing system packages.  
+  https://docs.python.org/3/tutorial/venv.html
+- **Python argparse tutorial** — Build command-line tools with documented arguments, validation, help output, and predictable behavior.  
+  https://docs.python.org/3/howto/argparse.html
+- **Python logging cookbook** — Improve automation diagnostics using structured logging patterns and practical configuration examples.  
+  https://docs.python.org/3/howto/logging-cookbook.html
+- **Automate the Boring Stuff** — Practice useful Python automation through concrete examples involving files, data, and workflows.  
+  https://automatetheboringstuff.com/
+- **A Tour of Go** — Learn Go fundamentals through interactive exercises before building distributable infrastructure tools.  
+  https://go.dev/tour/
+- **Go by Example** — Explore small examples covering concurrency, files, errors, HTTP, and practical programming patterns.  
+  https://gobyexample.com/
+- **Effective Go** — Learn established Go conventions that improve readability and maintenance of operational software.  
+  https://go.dev/doc/effective_go
+- **Regular Expressions 101** — Test parsing expressions against sample input before embedding them in operational scripts.  
+  https://regex101.com/
+- **JSON Schema learning** — Define and validate configuration structures before malformed data reaches downstream automation.  
+  https://json-schema.org/learn
+
+<a id="learning-topic-05"></a>
+
+### AWS architecture and hands-on workshops
+
+- **AWS Workshops** — Discover practical workshops across cloud architecture, containers, security, observability, and operations.  
+  https://workshops.aws/
+- **AWS Well-Architected Labs** — Apply architecture principles through exercises covering reliability, security, cost, and operations.  
+  https://www.wellarchitectedlabs.com/
+- **AWS Samples** — Explore reference implementations and workshop repositories maintained within the AWS developer ecosystem.  
+  https://github.com/aws-samples
+- **AWS Architecture Center** — Find architecture examples and technical guidance for evaluating cloud workload design choices.  
+  https://aws.amazon.com/architecture/
+- **AWS Prescriptive Guidance** — Study implementation patterns and migration guidance for specific organizational and technical challenges.  
+  https://aws.amazon.com/prescriptive-guidance/
+- **AWS IAM best practices** — Review identity controls before granting workloads or engineers access to cloud resources.  
+  https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
+- **AWS VPC user guide** — Understand private cloud networking boundaries before designing application connectivity and access paths.  
+  https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
+- **AWS EKS best practices** — Review operational considerations for Kubernetes workloads running on Amazon's managed control plane.  
+  https://docs.aws.amazon.com/eks/latest/best-practices/
+- **AWS Containers blog** — Explore technical walkthroughs and service explanations for container delivery and cloud operations.  
+  https://aws.amazon.com/blogs/containers/
+- **AWS Security blog** — Follow implementation guidance covering identities, protection mechanisms, investigations, and cloud security practices.  
+  https://aws.amazon.com/blogs/security/
+- **AWS Compute blog** — Study practical compute and serverless design patterns alongside implementation examples and tradeoffs.  
+  https://aws.amazon.com/blogs/compute/
+- **AWS Open Source blog** — Explore cloud-related open-source projects, integrations, community developments, and technical implementation stories.  
+  https://aws.amazon.com/blogs/opensource/
+
+<a id="learning-topic-06"></a>
+
+### Azure and Microsoft engineering
+
+- **Azure architecture examples** — Compare reference designs and solution patterns against your workload's actual operational requirements.  
+  https://learn.microsoft.com/en-us/azure/architecture/browse/
+- **Azure Well-Architected Framework** — Review workloads across reliability, security, cost, performance, and operational excellence concerns.  
+  https://learn.microsoft.com/en-us/azure/well-architected/
+- **Azure Cloud Adoption Framework** — Explore cloud adoption, governance, organizational readiness, and platform planning for larger environments.  
+  https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/
+- **Azure landing zones** — Understand platform boundaries, subscriptions, governance, and identity before scaling team cloud adoption.  
+  https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/
+- **Azure samples** — Discover sample applications and technical examples for experimenting with Microsoft cloud services.  
+  https://github.com/Azure-Samples
+- **Azure architecture icons** — Create clearer architecture diagrams using the provider's published service artwork and guidelines.  
+  https://learn.microsoft.com/en-us/azure/architecture/icons/
+- **John Savill's Azure Master Class** — Use course materials and whiteboards alongside the corresponding cloud architecture video lessons.  
+  https://github.com/johnthebrit/AzureMasterClass
+- **Microsoft Engineering Fundamentals** — Explore engineering practices covering collaboration, testing, delivery, reliability, and maintainable project execution.  
+  https://microsoft.github.io/code-with-engineering-playbook/
+- **Azure reliability guidance** — Investigate service reliability capabilities and regional considerations when designing recoverable cloud workloads.  
+  https://learn.microsoft.com/en-us/azure/reliability/
+- **Azure Architecture blog** — Read architecture discussions and implementation guidance from Microsoft's technical community publishing channels.  
+  https://techcommunity.microsoft.com/category/azure/blog/azurearchitectureblog
+- **Microsoft Learn sandbox training** — Search official learning modules by technology, experience level, and target engineering role.  
+  https://learn.microsoft.com/en-us/training/browse/
+- **Azure developer CLI learning** — Explore repeatable developer workflows for provisioning and deploying applications into Azure environments.  
+  https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/
+
+<a id="learning-topic-07"></a>
+
+### Google Cloud engineering
+
+- **Google Cloud architecture center** — Browse reference architectures and engineering guidance for operating workloads on Google Cloud.  
+  https://cloud.google.com/architecture
+- **Google Cloud training** — Find official learning paths aligned with cloud administration, architecture, data, and operations.  
+  https://cloud.google.com/learn/training
+- **Google Cloud samples** — Explore sample implementations and infrastructure projects published through Google's cloud engineering organization.  
+  https://github.com/GoogleCloudPlatform
+- **Google Cloud reliability guidance** — Study design and operational practices for building services with explicit reliability requirements.  
+  https://cloud.google.com/architecture/framework/reliability
+- **Google Cloud security guidance** — Review identity, data protection, and organizational security considerations within a cloud architecture.  
+  https://cloud.google.com/architecture/framework/security
+- **Google Cloud cost guidance** — Connect cloud spending decisions to workload requirements, operating practices, and measurable business value.  
+  https://cloud.google.com/architecture/framework/cost-optimization
+- **Google Cloud developer blog** — Explore application delivery patterns, technical examples, and engineering discussions from Google Cloud.  
+  https://cloud.google.com/blog/products/application-development
+- **Google Cloud containers blog** — Follow managed Kubernetes explanations, container architecture guidance, and cloud-native engineering case studies.  
+  https://cloud.google.com/blog/products/containers-kubernetes
+- **Google Cloud DevOps blog** — Read delivery and reliability discussions grounded in cloud engineering practices and examples.  
+  https://cloud.google.com/blog/products/devops-sre
+- **Google Cloud Terraform samples** — Explore reusable infrastructure modules and examples maintained within Google's Terraform module organization.  
+  https://github.com/terraform-google-modules
+- **Cloud Foundation Toolkit** — Discover reference infrastructure components for establishing consistent Google Cloud platform foundations.  
+  https://cloud.google.com/foundation-toolkit
+- **Google Cloud Architecture Framework resources** — Review operational responsibilities, processes, and feedback loops when maintaining cloud-based production services.  
+  https://cloud.google.com/architecture/framework/operational-excellence
+
+<a id="learning-topic-08"></a>
+
+### Containers, images, and build engineering
+
+- **Docker getting started workshop** — Build and run a small application while learning the container development lifecycle.  
+  https://docs.docker.com/get-started/workshop/
+- **Docker build best practices** — Improve image construction through deliberate choices about layers, dependencies, context, and caching.  
+  https://docs.docker.com/build/building/best-practices/
+- **Docker multi-stage builds** — Separate build tooling from runtime contents while keeping the build understandable and maintainable.  
+  https://docs.docker.com/build/building/multi-stage/
+- **Docker build secrets** — Provide sensitive build inputs without placing credentials in permanent application image layers.  
+  https://docs.docker.com/build/building/secrets/
+- **Docker samples organization** — Explore sample applications and teaching repositories that demonstrate common container development workflows.  
+  https://github.com/dockersamples
+- **Awesome Compose** — Find small multi-container examples and adapt their structure to your own learning projects.  
+  https://github.com/docker/awesome-compose
+- **OCI image specification** — Understand the common image format underlying portable container packaging and registry interoperability.  
+  https://github.com/opencontainers/image-spec
+- **OCI runtime specification** — Explore the runtime configuration model behind container execution and operating-system isolation boundaries.  
+  https://github.com/opencontainers/runtime-spec
+- **BuildKit examples** — Study build-engine examples when investigating caching, build behavior, and advanced image construction.  
+  https://github.com/moby/buildkit/tree/master/examples
+- **Distroless images** — Compare minimal runtime images with the debugging and maintenance requirements of your application.  
+  https://github.com/GoogleContainerTools/distroless
+- **Chainguard Academy** — Study container security, software supply chains, and artifact integrity through educational technical material.  
+  https://edu.chainguard.dev/
+
+<a id="learning-topic-09"></a>
+
+### Kubernetes learning and administration
+
+- **Kubernetes Basics** — Follow an introductory learning sequence covering deployment, discovery, scaling, and application updates.  
+  https://kubernetes.io/docs/tutorials/kubernetes-basics/
+- **Kubernetes tasks** — Find task-oriented procedures when implementing a specific cluster or workload administration capability.  
+  https://kubernetes.io/docs/tasks/
+- **Kubernetes troubleshooting** — Investigate workload and cluster problems using documented diagnostic approaches and observable evidence.  
+  https://kubernetes.io/docs/tasks/debug/
+- **Debug running Pods** — Practice collecting useful evidence from workloads before changing configuration or restarting containers.  
+  https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/
+- **Kubernetes resource management** — Understand how resource requests and limits affect workload scheduling and runtime behavior.  
+  https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+- **Kubernetes probes** — Choose health checks that distinguish startup, readiness, and genuine reasons to restart.  
+  https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
+- **Kubernetes network policies** — Define intended workload connectivity and verify that the network implementation enforces it.  
+  https://kubernetes.io/docs/concepts/services-networking/network-policies/
+- **Kubernetes RBAC** — Design scoped permissions for engineers, controllers, and application identities within cluster environments.  
+  https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+- **Kubernetes security concepts** — Explore trust boundaries and controls before treating a cluster as a secure platform.  
+  https://kubernetes.io/docs/concepts/security/
+- **Kubernetes storage concepts** — Understand persistence, provisioning, volumes, and the operational boundaries of stateful application storage.  
+  https://kubernetes.io/docs/concepts/storage/
+- **Kubernetes disruption guidance** — Distinguish planned maintenance from unexpected failures when evaluating workload availability and disruption controls.  
+  https://kubernetes.io/docs/concepts/workloads/pods/disruptions/
+- **Kubernetes upgrade planning** — Review cluster upgrade responsibilities and supported procedures before changing a running environment.  
+  https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/
+- **Kubernetes The Hard Way** — Explore the components behind Kubernetes by assembling an educational cluster step by step.  
+  https://github.com/kelseyhightower/kubernetes-the-hard-way
+- **Kubernetes community learning** — Discover community resources for learning, participation, and understanding the Kubernetes contributor ecosystem.  
+  https://www.kubernetes.dev/resources/
+
+<a id="learning-topic-10"></a>
+
+### Infrastructure as code and configuration practice
+
+- **Terraform testing tutorial** — Practice validating infrastructure modules instead of relying entirely on manual plan inspection.  
+  https://developer.hashicorp.com/terraform/tutorials/configuration-language/test
+- **Terraform module tutorials** — Learn module structure and reuse while considering readability, maintenance, and interface boundaries.  
+  https://developer.hashicorp.com/terraform/tutorials/modules
+- **Terraform state tutorials** — Investigate state behavior and management procedures before recovering or importing infrastructure resources.  
+  https://developer.hashicorp.com/terraform/tutorials/state
+- **Terraform AWS modules** — Compare community modules and examples while evaluating their interfaces and maintenance implications.  
+  https://github.com/terraform-aws-modules
+- **Terraform Azure modules** — Inspect a focused infrastructure module and its approach to exposing network configuration choices.  
+  https://github.com/Azure/terraform-azurerm-avm-res-network-virtualnetwork
+- **OpenTofu examples and discussions** — Follow the provisioning engine's source, issues, and community discussions when investigating tool behavior.  
+  https://github.com/opentofu/opentofu
+- **Ansible examples** — Study playbook examples and adapt them to a small, controlled automation environment.  
+  https://github.com/ansible/ansible-examples
+- **Ansible workshops** — Find guided workshop materials for practicing configuration automation and repeatable operational workflows.  
+  https://github.com/ansible/workshops
+- **Ansible lint** — Review automation content for maintainability problems and common configuration mistakes before deployment.  
+  https://ansible.readthedocs.io/projects/lint/
+- **Molecule learning** — Explore repeatable testing workflows for configuration automation and infrastructure-related role development.  
+  https://ansible.readthedocs.io/projects/molecule/
+- **Pulumi examples** — Compare infrastructure examples across languages and providers while understanding the underlying cloud resources.  
+  https://github.com/pulumi/examples
+
+<a id="learning-topic-11"></a>
+
+### Continuous integration, delivery, and release practice
+
+- **GitHub Actions starter workflows** — Study example workflows and adapt their permissions and behavior to your own repository.  
+  https://github.com/actions/starter-workflows
+- **GitHub Actions security guidance** — Review trust boundaries, untrusted inputs, and identity before granting workflows deployment authority.  
+  https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions
+- **GitHub Actions OIDC** — Understand short-lived cloud authentication as an alternative to distributing permanent deployment credentials.  
+  https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/about-security-hardening-with-openid-connect
+- **GitHub Actions reusable workflows** — Reduce repeated pipeline definitions while keeping interfaces, permissions, and change ownership clear.  
+  https://docs.github.com/en/actions/sharing-automations/reusing-workflows
+- **GitHub Actions caching** — Improve feedback speed while understanding cache keys, invalidation behavior, and trust boundaries.  
+  https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows
+- **Jenkins Pipeline tour** — Start with a minimal pipeline before introducing shared libraries and complex release processes.  
+  https://www.jenkins.io/doc/pipeline/tour/hello-world/
+- **Jenkins pipeline examples** — Explore pipeline patterns and evaluate how they handle credentials, failures, and maintenance.  
+  https://github.com/jenkinsci/pipeline-examples
+- **Jenkins shared libraries** — Understand the tradeoffs of shared pipeline code across multiple teams and repositories.  
+  https://www.jenkins.io/doc/book/pipeline/shared-libraries/
+- **GitLab pipeline examples** — Find delivery examples for different applications, then review their security and release assumptions.  
+  https://docs.gitlab.com/ci/examples/
+- **GitLab pipeline efficiency** — Investigate pipeline structure and feedback time before simply increasing runner resource consumption.  
+  https://docs.gitlab.com/ci/pipelines/pipeline_efficiency/
+- **OpenFeature learning** — Explore vendor-neutral feature-flag concepts for separating software deployment from controlled user exposure.  
+  https://openfeature.dev/
+- **Argo Rollouts examples** — Practice progressive delivery using a small application designed for rollout demonstrations and experiments.  
+  https://github.com/argoproj/rollouts-demo
+
+<a id="learning-topic-12"></a>
+
+### GitOps and platform delivery
+
+- **OpenGitOps project** — Read the principles and definitions behind GitOps before selecting a reconciliation controller.  
+  https://github.com/open-gitops/documents
+- **Argo Rollouts learning** — Study progressive delivery concepts, traffic management integration, and automated rollout verification mechanisms.  
+  https://argoproj.github.io/argo-rollouts/
+- **Flux multi-tenancy examples** — Investigate repository boundaries, identities, and ownership within a shared GitOps delivery model.  
+  https://github.com/fluxcd/flux2-multi-tenancy
+- **Flux bootstrap examples** — Explore controller behavior, installation approaches, and real issues encountered by GitOps users.  
+  https://github.com/fluxcd/flux2
+- **Backstage software templates** — Understand how a developer portal can scaffold services through a supported golden path.  
+  https://backstage.io/docs/features/software-templates/
+- **Backstage software catalog** — Explore service ownership and metadata as foundations for useful internal developer experiences.  
+  https://backstage.io/docs/features/software-catalog/
+- **CNCF platform engineering guidance** — Study platform capabilities and organizational considerations before implementing a developer portal product.  
+  https://tag-app-delivery.cncf.io/whitepapers/platforms/
+- **Platform Engineering community** — Discover community discussions, learning material, and events focused on internal developer platforms.  
+  https://platformengineering.org/
+- **Team Topologies resources** — Explore organizational interaction patterns that influence platform ownership, delivery flow, and cognitive load.  
+  https://teamtopologies.com/
+
+<a id="learning-topic-13"></a>
+
+### Observability and production debugging
+
+- **OpenTelemetry demo architecture** — Trace a demonstration system's request paths and understand how its telemetry is produced.  
+  https://opentelemetry.io/docs/demo/architecture/
+- **OpenTelemetry concepts** — Learn instrumentation and telemetry concepts before assembling an observability collection and export pipeline.  
+  https://opentelemetry.io/docs/concepts/
+- **OpenTelemetry Collector tutorials** — Explore how telemetry is received, transformed, filtered, and exported across observability backends.  
+  https://opentelemetry.io/docs/collector/
+- **Prometheus getting started** — Collect your first metrics and connect a concrete target to the monitoring system.  
+  https://prometheus.io/docs/prometheus/latest/getting_started/
+- **Prometheus query basics** — Learn the query model before building dashboards or interpreting alert expressions under pressure.  
+  https://prometheus.io/docs/prometheus/latest/querying/basics/
+- **Prometheus alerting rules** — Understand how alert conditions are expressed and evaluated against collected time-series data.  
+  https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/
+- **Prometheus instrumentation guidance** — Choose useful signals while considering labels, metric types, and application-specific monitoring needs.  
+  https://prometheus.io/docs/practices/instrumentation/
+- **Grafana tutorials** — Follow practical observability exercises connecting data collection, visualization, dashboards, and operational investigations.  
+  https://grafana.com/tutorials/
+- **Grafana Play** — Explore interactive dashboard examples before designing your own views of application behavior.  
+  https://play.grafana.org/
+- **Grafana dashboards library** — Discover dashboard examples and assess whether their signals answer your own operational questions.  
+  https://grafana.com/grafana/dashboards/
+- **Grafana Loki tutorials** — Investigate log collection and querying while considering operational ownership and retention costs.  
+  https://grafana.com/docs/loki/latest/get-started/
+- **OpenTelemetry Python examples** — Study concrete instrumentation examples before applying telemetry patterns to your own Python application.  
+  https://github.com/open-telemetry/opentelemetry-python/tree/main/docs/examples
+
+<a id="learning-topic-14"></a>
+
+### Reliability, incidents, and distributed systems
+
+- **Google SRE workbook** — Apply reliability principles through practical discussions of monitoring, incident response, and service objectives.  
+  https://sre.google/workbook/table-of-contents/
+- **SRE error budgets** — Connect reliability targets to engineering priorities instead of treating every failure identically.  
+  https://sre.google/sre-book/embracing-risk/
+- **SRE monitoring distributed systems** — Study monitoring principles that connect useful signals to user-visible symptoms and operational action.  
+  https://sre.google/sre-book/monitoring-distributed-systems/
+- **SRE effective troubleshooting** — Practice hypothesis-driven investigation instead of changing several system components without clear evidence.  
+  https://sre.google/sre-book/effective-troubleshooting/
+- **SRE incident management** — Understand roles and coordination practices that help teams respond coherently during service incidents.  
+  https://sre.google/sre-book/managing-incidents/
+- **SRE postmortem culture** — Learn how incident reviews can improve systems without reducing complex failures to individual blame.  
+  https://sre.google/sre-book/postmortem-culture/
+- **SRE eliminating toil** — Identify repetitive operational work and evaluate opportunities for lasting engineering improvements across services.  
+  https://sre.google/sre-book/eliminating-toil/
+- **SRE workbook SLO implementation** — Move from reliability terminology toward objectives and measurement choices grounded in user needs.  
+  https://sre.google/workbook/implementing-slos/
+- **Amazon timeouts and retries** — Understand how timeout choices and retry behavior interact with overload and dependency failures.  
+  https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/
+- **Amazon idempotent APIs** — Study the design choices that make repeated requests safer after ambiguous network failures.  
+  https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/
+- **Amazon shuffle sharding** — Explore workload isolation strategies that limit the impact of failures and noisy neighbors.  
+  https://aws.amazon.com/builders-library/workload-isolation-using-shuffle-sharding/
+- **Amazon avoiding overload** — Investigate deliberate rejection of work as a way to protect essential service behavior.  
+  https://aws.amazon.com/builders-library/using-load-shedding-to-avoid-overload/
+
+<a id="learning-topic-15"></a>
+
+### Security engineering and software supply chains
+
+- **OWASP DevSecOps Guideline** — Explore security activities across development and delivery rather than adding only a final scan.  
+  https://owasp.org/www-project-devsecops-guideline/
+- **OWASP threat modeling** — Identify assets, trust boundaries, and plausible failure or abuse paths before choosing controls.  
+  https://owasp.org/www-community/Threat_Modeling
+- **OWASP secrets management guidance** — Review secret issuance, storage, rotation, access, and incident handling across application lifecycles.  
+  https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+- **OWASP Docker security guidance** — Assess container build and runtime controls against practical security concerns in deployment environments.  
+  https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html
+- **OWASP Kubernetes security guidance** — Review cluster and workload controls while keeping operational responsibilities and trust boundaries explicit.  
+  https://cheatsheetseries.owasp.org/cheatsheets/Kubernetes_Security_Cheat_Sheet.html
+- **OpenSSF Scorecard** — Explore automated signals that help evaluate security practices in open-source software repositories.  
+  https://github.com/ossf/scorecard
+- **OpenSSF best practices badge** — Use a structured checklist to evaluate and improve an open-source project's engineering practices.  
+  https://www.bestpractices.dev/
+- **OpenSSF training** — Find educational material about secure development and the broader open-source software supply chain.  
+  https://openssf.org/training/
+- **SLSA specification** — Understand provenance and build integrity requirements before claiming a supply-chain assurance level.  
+  https://slsa.dev/spec/
+- **SPDX resources** — Learn a standardized approach to describing software components and associated licensing information.  
+  https://spdx.dev/
+- **CycloneDX resources** — Explore bill-of-materials formats and concepts used across software supply-chain transparency workflows.  
+  https://cyclonedx.org/
+- **Anchore SBOM generation guide** — Generate a software inventory and understand which artifacts and package types are represented.  
+  https://oss.anchore.com/docs/guides/sbom/
+- **Anchore vulnerability scanning guide** — Interpret software vulnerability findings alongside exposure, available fixes, and application operating context.  
+  https://oss.anchore.com/docs/guides/vulnerability/
+- **Sigstore quickstart** — Practice signing and verification while understanding the identity and trust policy involved.  
+  https://docs.sigstore.dev/quickstart/quickstart-cosign/
+- **Kyverno policies library** — Study policy examples and test their behavior against valid workloads and intended exceptions.  
+  https://kyverno.io/policies/
+
+<a id="learning-topic-16"></a>
+
+### Backup, storage, and data operations
+
+- **PostgreSQL tutorial** — Build relational database fundamentals before operating application data and designing recovery procedures.  
+  https://www.postgresql.org/docs/current/tutorial.html
+- **PostgreSQL backup guidance** — Compare backup approaches and understand their recovery capabilities and operational requirements.  
+  https://www.postgresql.org/docs/current/backup.html
+- **PostgreSQL continuous archiving** — Understand how archived write-ahead logs support recovery beyond a single base backup.  
+  https://www.postgresql.org/docs/current/continuous-archiving.html
+- **PostgreSQL monitoring** — Investigate database activity and resource behavior before assuming an application problem is CPU-related.  
+  https://www.postgresql.org/docs/current/monitoring.html
+- **PostgreSQL high availability** — Compare replication and availability mechanisms while keeping data recovery requirements separate from redundancy.  
+  https://www.postgresql.org/docs/current/high-availability.html
+- **Restic examples** — Practice creating backups with explicit inclusion, exclusion, retention, and recovery expectations for data.  
+  https://restic.readthedocs.io/en/stable/040_backup.html
+- **Velero project** — Explore backup capabilities and project discussions while planning an actual Kubernetes restore test.  
+  https://github.com/vmware-tanzu/velero
+- **pgBackRest FAQ** — Investigate common backup and restoration questions before designing a PostgreSQL operational recovery process.  
+  https://pgbackrest.org/faq.html
+- **Redis persistence concepts** — Understand persistence mechanisms and recovery tradeoffs before using an in-memory data service.  
+  https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/
+- **Kafka design discussion** — Study event-log design concepts before selecting delivery, replay, retention, and consumer behavior.  
+  https://kafka.apache.org/documentation/#design
+- **RabbitMQ tutorials** — Practice messaging workflows while learning acknowledgments, routing, delivery behavior, and application responsibilities.  
+  https://www.rabbitmq.com/tutorials
+- **NATS by Example** — Explore concise messaging examples covering practical communication patterns and application integration scenarios.  
+  https://natsbyexample.com/
+
+<a id="learning-topic-17"></a>
+
+### Performance testing and resilience experiments
+
+- **k6 examples** — Build representative load scenarios and connect workload behavior to measurable application response signals.  
+  https://grafana.com/docs/k6/latest/examples/
+- **k6 test types** — Distinguish different performance questions before selecting a load pattern and success criteria.  
+  https://grafana.com/docs/k6/latest/testing-guides/test-types/
+- **Locust quickstart** — Create a small load test and inspect its traffic generation and response measurements.  
+  https://docs.locust.io/en/stable/quickstart.html
+- **Locust writing tests** — Model user behavior explicitly instead of sending unrealistic traffic to an application endpoint.  
+  https://docs.locust.io/en/stable/writing-a-locustfile.html
+- **JMeter best practices** — Review practical load-testing considerations before trusting results from a large test run.  
+  https://jmeter.apache.org/usermanual/best-practices.html
+- **Chaos Mesh experiments** — Plan a bounded failure experiment with clear observations, ownership, and recovery conditions.  
+  https://chaos-mesh.org/docs/run-a-chaos-experiment/
+- **Principles of Chaos Engineering** — Understand hypothesis-driven resilience experiments before deliberately disrupting a system or dependency.  
+  https://principlesofchaos.org/
+- **LitmusChaos learning** — Explore another resilience experimentation ecosystem and compare its workflow with your operational needs.  
+  https://litmuschaos.io/
+- **Toxiproxy** — Simulate dependency and network problems while observing how a test application degrades.  
+  https://github.com/Shopify/toxiproxy
+- **Vegeta** — Explore a focused HTTP load-generation tool when investigating service behavior under traffic.  
+  https://github.com/tsenart/vegeta
+
+<a id="learning-topic-18"></a>
+
+### Platform engineering, cost, and sustainability
+
+- **CNCF platform maturity model** — Evaluate platform practices against organizational needs instead of measuring progress by tool count.  
+  https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/
+- **DORA capabilities** — Explore delivery practices associated with organizational performance and consider their local implementation context.  
+  https://dora.dev/capabilities/
+- **DORA metrics** — Understand delivery measurements before turning them into dashboards or organizational improvement targets.  
+  https://dora.dev/guides/dora-metrics-four-keys/
+- **FinOps principles** — Connect financial ownership, collaboration, and engineering decisions when managing cloud resource consumption.  
+  https://www.finops.org/framework/principles/
+- **FinOps capabilities** — Explore operational capabilities for allocating, understanding, and improving the economics of cloud usage.  
+  https://www.finops.org/framework/capabilities/
+- **OpenCost specification** — Understand cost allocation concepts before comparing workload costs across teams and environments.  
+  https://opencost.io/docs/specification/
+- **Infracost CI integration** — Explore cost feedback during infrastructure review while distinguishing estimates from realized cloud spending.  
+  https://www.infracost.io/docs/integrations/cicd/
+- **Green Software Foundation learning** — Study software sustainability concepts and connect resource consumption to engineering design choices.  
+  https://learn.greensoftware.foundation/
+- **Software Carbon Intensity specification** — Explore a framework for discussing software carbon intensity with explicit measurement boundaries.  
+  https://sci.greensoftware.foundation/
+
+<a id="learning-topic-19"></a>
+
+### AI infrastructure and MLOps learning
+
+- **Made With ML** — Study end-to-end machine-learning engineering with attention to testing, deployment, and operational ownership.  
+  https://madewithml.com/
+- **Full Stack Deep Learning** — Explore the engineering concerns involved in building and operating machine-learning-based applications.  
+  https://fullstackdeeplearning.com/
+- **MLOps Zoomcamp** — Follow a project-oriented learning path connecting model development, deployment, and operational practices.  
+  https://github.com/DataTalksClub/mlops-zoomcamp
+- **MLOps community** — Discover practitioner discussions, learning resources, and examples from machine-learning platform engineering teams.  
+  https://mlops.community/
+- **MLflow tutorials** — Explore examples connecting experiments, model artifacts, tracking, evaluation, and deployment workflows.  
+  https://mlflow.org/docs/latest/ml/tutorials-and-examples/
+- **DVC tutorials** — Practice versioning data-related project inputs while understanding reproducibility and collaboration requirements.  
+  https://dvc.org/doc/start
+- **Ray learning examples** — Explore distributed computing examples and assess their infrastructure and workload management implications.  
+  https://docs.ray.io/en/latest/ray-overview/examples.html
+- **KServe examples** — Study model-serving examples while considering deployment behavior, observability, and operational reliability concerns.  
+  https://github.com/kserve/kserve/tree/master/docs/samples
+- **Hugging Face courses** — Build familiarity with modern machine-learning tools before maintaining the platforms that support them.  
+  https://huggingface.co/learn
+- **NVIDIA DLI** — Find structured learning about accelerated computing and the infrastructure behind GPU-based workloads.  
+  https://www.nvidia.com/en-us/training/
+
+<a id="learning-topic-20"></a>
+
+### Senior engineering, architecture, and design communication
+
+- **Architecture Decision Records** — Learn a lightweight way to preserve context, alternatives, and consequences behind engineering decisions.  
+  https://adr.github.io/
+- **ADR examples and templates** — Compare decision-record formats and choose one that helps your reviewers understand real tradeoffs.  
+  https://github.com/joelparkerhenderson/architecture-decision-record
+- **C4 model** — Create architecture diagrams that communicate system context and component relationships to different audiences.  
+  https://c4model.com/
+- **Architecture of Open Source Applications** — Study how real software systems are structured and why their designers made particular choices.  
+  https://aosabook.org/
+- **Distributed Systems Reading Group** — Explore distributed-system learning material and deepen your understanding beyond tool-specific operational knowledge.  
+  https://www.distributed-systems.net/
+- **Martin Fowler architecture articles** — Read architectural explanations and compare their assumptions with the constraints of your system.  
+  https://martinfowler.com/architecture/
+- **Google engineering practices** — Explore review and development practices that help teams maintain understandable, reliable software changes.  
+  https://google.github.io/eng-practices/
+- **Staff Engineer stories** — Learn how experienced engineers influence organizations, handle ambiguity, and lead technical work.  
+  https://staffeng.com/
+- **The Staff Engineer's Path** — Explore a commercial book about technical leadership beyond an individual implementation role.  
+  https://www.oreilly.com/library/view/the-staff-engineers/9781098118723/
+- **System Design Fight Club** — Discover system-design learning discussions and compare approaches to architectural interview preparation.  
+  https://github.com/systemdesignfightclub/SDFC
+
+<a id="learning-topic-21"></a>
+
+### Additional project collections and engineering references
+
+- **RealWorld example applications** — Use a realistic application specification as a starting point for delivery and operations projects.  
+  https://github.com/gothinkster/realworld
+- **Sock Shop project** — Inspect an educational microservices application and assess compatibility before reusing older manifests.  
+  https://github.com/microservices-demo/microservices-demo
+- **Awesome Scalability** — Discover engineering articles and case studies about scaling distributed systems and infrastructure.  
+  https://github.com/binhnguyennus/awesome-scalability
+- **Awesome Chaos Engineering** — Find resilience experimentation resources and compare practical approaches to controlled system failure.  
+  https://github.com/dastergon/awesome-chaos-engineering
+- **Awesome Incident Response** — Explore incident-handling resources and adapt suitable practices to your organization's operational context.  
+  https://github.com/meirwah/awesome-incident-response
+- **The Twelve Networking Truths** — Read a memorable networking perspective and discuss where its observations apply operationally.  
+  https://www.rfc-editor.org/rfc/rfc1925
 
 [Back to contents](#contents)
 

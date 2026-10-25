@@ -1,6 +1,6 @@
 # Asset attribution
 
-The Veriqta DevOps World roadmap and category headers are original project artwork. Tool tiles place the original identifying artwork on a light background for readability.
+The Veriqta DevOps World Mermaid roadmap in README.md and the category headers are original project artwork. Tool tiles place the original identifying artwork on a light background for readability.
 
 Devicon artwork: https://github.com/devicons/devicon — MIT license in [LICENSE.devicon](logos/LICENSE.devicon).
 

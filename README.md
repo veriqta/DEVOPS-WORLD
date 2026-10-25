@@ -14,96 +14,170 @@
 
 ## DevOps roadmap
 
-A suggested path, with side branches for skills to practice at each stage.
+Follow the central path. Use the side branches to choose tools and build the supporting skills.
 
 ```mermaid
-flowchart TB
-    START["DEVOPS WORLD<br/>Engineering learning roadmap"]
-    START --> SYS["01 · Systems foundations"]
-    SYS -.-> OS["Linux administration<br/>Users · permissions · processes<br/>Storage · services · package management"]
-    SYS -.-> NET["Networking fundamentals<br/>IP addressing · routing · DNS<br/>HTTP · TLS · proxies · load balancing"]
-    SYS --> CODE["02 · Programming and automation"]
-    CODE -.-> LANG["Choose a programming language<br/>Python or Go<br/>Data structures · APIs · error handling"]
-    CODE -.-> SHELL["Shell and terminal skills<br/>Bash or PowerShell<br/>Quoting · exit codes · text processing"]
-    CODE --> VCS["03 · Source control and collaboration"]
-    VCS -.-> GIT["Git workflows<br/>Branches · commits · reviews<br/>Conflicts · tags · reverting changes"]
-    VCS -.-> TEST["Engineering habits<br/>Readable code · useful tests<br/>Documentation · small changes"]
-    VCS --> APP["04 · Understand an application"]
-    APP -.-> RUNTIME["Runtime behavior<br/>Configuration · dependencies<br/>Health endpoints · graceful shutdown"]
-    APP -.-> DATA["State and communication<br/>Databases · caches · queues<br/>Transactions · retries · idempotency"]
-    APP --> PACK["05 · Package and run software"]
-    PACK -.-> IMAGE["Container images<br/>Build context · layers · registries<br/>Dependency pinning · non-root users"]
-    PACK -.-> LOCAL["Local environments<br/>Multi-container applications<br/>Networking · volumes · resource limits"]
-    PACK --> CLOUD["06 · Learn one cloud deeply"]
-    CLOUD -.-> CLOUDCORE["Cloud building blocks<br/>Identity · private networks · compute<br/>Object storage · managed databases"]
-    CLOUD -.-> CLOUDOPS["Cloud operating model<br/>Accounts · budgets · quotas<br/>Audit logs · availability · shared responsibility"]
-    CLOUD --> IAC["07 · Infrastructure as code"]
-    IAC -.-> PROVISION["Provisioning workflow<br/>Plans · modules · providers<br/>State · locking · imports · drift"]
-    IAC -.-> CONFIG["Configuration automation<br/>Desired state · idempotency<br/>Testing · secrets · controlled changes"]
-    IAC --> DELIVERY["08 · Continuous integration and delivery"]
-    DELIVERY -.-> PIPE["Build a trusted pipeline<br/>Tests · artifacts · provenance<br/>Scoped identities · protected environments"]
-    DELIVERY -.-> RELEASE["Release safely<br/>Promote the same artifact<br/>Rolling updates · canaries · rollback"]
-    DELIVERY --> KUBE["09 · Orchestration when the workload needs it"]
-    KUBE -.-> WORKLOAD["Kubernetes workloads<br/>Pods · controllers · scheduling<br/>Services · probes · persistent storage"]
-    KUBE -.-> CLUSTER["Cluster operations<br/>RBAC · network policy · upgrades<br/>Capacity · troubleshooting · tenancy"]
-    KUBE --> GITOPS["10 · Declarative delivery and reconciliation"]
-    GITOPS -.-> DESIRED["GitOps workflow<br/>Reviewed desired state<br/>Drift · reconciliation · emergency recovery"]
-    GITOPS -.-> CONFIGURATION["Application configuration<br/>Charts or overlays<br/>Versioning · promotion · compatibility"]
-    GITOPS --> OBS["11 · Observe the user journey"]
-    OBS -.-> SIGNAL["Useful telemetry<br/>Metrics · logs · traces<br/>Instrumentation · correlation · cardinality"]
-    OBS -.-> SLO["Reliability objectives<br/>SLIs · SLOs · error budgets<br/>Actionable alerts · runbooks"]
-    OBS --> SECURITY["12 · Secure the lifecycle"]
-    SECURITY -.-> IDENTITY["Access and secrets<br/>Least privilege · workload identity<br/>Rotation · revocation · auditability"]
-    SECURITY -.-> SUPPLY["Software supply chain<br/>SBOMs · scanning · signing<br/>Verification · policy · exceptions"]
-    SECURITY --> RESILIENCE["13 · Test failure and recovery"]
-    RESILIENCE -.-> RECOVER["Recover state and services<br/>Backups · restore tests · RTO · RPO<br/>Dependencies · keys · recovery order"]
-    RESILIENCE -.-> CAPACITY["Performance and resilience<br/>Load testing · capacity planning<br/>Controlled failure · graceful degradation"]
-    RESILIENCE --> PLATFORM["14 · Build sustainable capabilities"]
-    PLATFORM -.-> DEVEX["Platform engineering<br/>Golden paths · self-service<br/>Ownership · support · developer feedback"]
-    PLATFORM -.-> COST["FinOps and efficiency<br/>Allocation · unit cost · estimates<br/>Rightsizing · retention · realized savings"]
-    PLATFORM --> SENIOR["15 · Grow engineering judgment"]
-    SENIOR -.-> DESIGN["Architecture and migrations<br/>Constraints · consistency · failure domains<br/>Alternatives · staged change · decision records"]
-    SENIOR -.-> LEAD["Technical leadership<br/>Incident coordination · mentoring<br/>Clear communication · prioritization"]
-    SENIOR --> SPECIALIZE["Choose a specialization and keep practicing"]
-    SPECIALIZE -.-> TRACKS["SRE · cloud engineering · platform engineering<br/>DevSecOps · data platforms · MLOps"]
-    SPECIALIZE --> EVIDENCE["Build → test → observe → recover → explain → improve"]
-    OS --> CODE
-    NET --> CODE
-    LANG --> VCS
-    SHELL --> VCS
-    GIT --> APP
-    TEST --> APP
-    RUNTIME --> PACK
-    DATA --> PACK
-    IMAGE --> CLOUD
-    LOCAL --> CLOUD
-    CLOUDCORE --> IAC
-    CLOUDOPS --> IAC
-    PROVISION --> DELIVERY
-    CONFIG --> DELIVERY
-    PIPE --> KUBE
-    RELEASE --> KUBE
-    WORKLOAD --> GITOPS
-    CLUSTER --> GITOPS
-    DESIRED --> OBS
-    CONFIGURATION --> OBS
-    SIGNAL --> SECURITY
-    SLO --> SECURITY
-    IDENTITY --> RESILIENCE
-    SUPPLY --> RESILIENCE
-    RECOVER --> PLATFORM
-    CAPACITY --> PLATFORM
-    DEVEX --> SENIOR
-    COST --> SENIOR
-    DESIGN --> SPECIALIZE
-    LEAD --> SPECIALIZE
-    TRACKS --> EVIDENCE
-    classDef stage fill:#10324a,stroke:#32b8c6,color:#ffffff,stroke-width:2px;
-    classDef topic fill:#eaf5fa,stroke:#82acbc,color:#102b3d;
-    classDef milestone fill:#007d69,stroke:#006b5a,color:#ffffff,stroke-width:2px;
-    class SYS,CODE,VCS,APP,PACK,CLOUD,IAC,DELIVERY,KUBE,GITOPS,OBS,SECURITY,RESILIENCE,PLATFORM,SENIOR stage;
-    class OS,NET,LANG,SHELL,GIT,TEST,RUNTIME,DATA,IMAGE,LOCAL,CLOUDCORE,CLOUDOPS,PROVISION,CONFIG,PIPE,RELEASE,WORKLOAD,CLUSTER,DESIRED,CONFIGURATION,SIGNAL,SLO,IDENTITY,SUPPLY,RECOVER,CAPACITY,DEVEX,COST,DESIGN,LEAD,TRACKS topic;
-    class START,SPECIALIZE,EVIDENCE milestone;
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'Arial','fontSize':'16px'}}}%%
+block-beta
+    columns 3
+    space START["VERIQTA DEVOPS WORLD<br/>Learn · build · operate · improve"] space
+    space:3
+    L1["Linux · users · permissions<br/>Processes · services · storage"] M1["01 · Linux and systems"] T1["Bash · PowerShell<br/>Logs · packages · SSH"]
+    space:3
+    L2["TCP/IP · routing · DNS<br/>HTTP · TLS · certificates"] M2["02 · Networking"] T2["Proxies · load balancing<br/>Firewalls · private networks"]
+    space:3
+    L3["Choose: Python or Go<br/>Functions · data · errors"] M3["03 · Programming"] T3["APIs · JSON · tests<br/>Timeouts · idempotency"]
+    space:3
+    L4["Commits · branches · reviews<br/>Merges · tags · reverting"] M4["04 · Git and collaboration"] T4["GitHub · GitLab · Bitbucket<br/>Issues · releases · ownership"]
+    space:3
+    L5["Docker or Podman<br/>Images · layers · registries"] M5["05 · Containers"] T5["Compose · volumes · networking<br/>Non-root users · shutdown"]
+    space:3
+    L6["Choose: AWS, Azure, or GCP<br/>IAM · compute · networking"] M6["06 · Cloud foundations"] T6["Storage · managed services<br/>Budgets · quotas · audit logs"]
+    space:3
+    L7["OpenTofu · Terraform · Pulumi<br/>Plans · modules · providers"] M7["07 · Infrastructure as code"] T7["State · locking · imports<br/>Drift · review · recovery"]
+    space:3
+    L8["Ansible · cloud-init<br/>Inventory · roles · templates"] M8["08 · Configuration automation"] T8["Idempotency · tests · secrets<br/>Versioning · safe changes"]
+    space:3
+    L9["Actions · GitLab CI · Jenkins<br/>Tests · immutable artifacts"] M9["09 · CI/CD and releases"] T9["Promotion · canaries · rollback<br/>Short-lived workload identity"]
+    space:3
+    L10["Pods · workloads · services<br/>Scheduling · probes · storage"] M10["10 · Kubernetes operations"] T10["RBAC · policy · upgrades<br/>kind · minikube · K9s"]
+    space:3
+    L11["Argo CD or Flux<br/>Desired state · reconciliation"] M11["11 · GitOps delivery"] T11["Helm or Kustomize<br/>Promotion · drift · recovery"]
+    space:3
+    L12["Prometheus · Grafana<br/>OpenTelemetry · logs · traces"] M12["12 · Observability"] T12["Instrumentation · dashboards<br/>Cardinality · sampling · retention"]
+    space:3
+    L13["SLIs · SLOs · error budgets<br/>Alerts · runbooks · capacity"] M13["13 · Site reliability"] T13["Incidents · reviews · toil<br/>Ownership · operational readiness"]
+    space:3
+    L14["Identity · cloud secrets · Vault<br/>Rotation · access · auditability"] M14["14 · Security and supply chain"] T14["Syft · Grype · Trivy · Cosign<br/>SBOMs · signing · policy"]
+    space:3
+    L15["SQL · caches · queues · streams<br/>Schemas · retries · consistency"] M15["15 · Data and recovery"] T15["Velero · Restic · pgBackRest<br/>Restore tests · RTO · RPO"]
+    space:3
+    L16["k6 · Locust · JMeter<br/>Load models · latency · limits"] M16["16 · Performance and resilience"] T16["Chaos Mesh · fault injection<br/>Isolation · graceful degradation"]
+    space:3
+    L17["Golden paths · developer portals<br/>Self-service · support · feedback"] M17["17 · Platform and cost"] T17["OpenCost · Infracost<br/>Allocation · unit cost · rightsizing"]
+    space:3
+    L18["Architecture · migrations<br/>Tradeoffs · failure domains"] M18["18 · Senior engineering"] T18["Decision records · mentoring<br/>Incident leadership · communication"]
+    space:3
+    space FINISH["Keep building real projects<br/>Choose your specialization"] space
+    START --> M1
+    M1 --> M2
+    M2 --> M3
+    M3 --> M4
+    M4 --> M5
+    M5 --> M6
+    M6 --> M7
+    M7 --> M8
+    M8 --> M9
+    M9 --> M10
+    M10 --> M11
+    M11 --> M12
+    M12 --> M13
+    M13 --> M14
+    M14 --> M15
+    M15 --> M16
+    M16 --> M17
+    M17 --> M18
+    M18 --> FINISH
+    L1 --- M1
+    M1 --- T1
+    L2 --- M2
+    M2 --- T2
+    L3 --- M3
+    M3 --- T3
+    L4 --- M4
+    M4 --- T4
+    L5 --- M5
+    M5 --- T5
+    L6 --- M6
+    M6 --- T6
+    L7 --- M7
+    M7 --- T7
+    L8 --- M8
+    M8 --- T8
+    L9 --- M9
+    M9 --- T9
+    L10 --- M10
+    M10 --- T10
+    L11 --- M11
+    M11 --- T11
+    L12 --- M12
+    M12 --- T12
+    L13 --- M13
+    M13 --- T13
+    L14 --- M14
+    M14 --- T14
+    L15 --- M15
+    M15 --- T15
+    L16 --- M16
+    M16 --- T16
+    L17 --- M17
+    M17 --- T17
+    L18 --- M18
+    M18 --- T18
+    classDef stage fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    classDef skills fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    classDef choices fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    classDef milestone fill:#10324a,stroke:#32b8c6,color:#ffffff,stroke-width:2px;
+    class M1,M2,M3,M4,M5,M6,M7,M8,M9,M10,M11,M12,M13,M14,M15,M16,M17,M18 stage;
+    class L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11,L12,L13,L14,L15,L16,L17,L18 skills;
+    class T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18 choices;
+    class START,FINISH milestone;
+    style M1 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L1 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T1 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M2 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L2 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T2 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M3 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L3 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T3 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M4 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L4 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T4 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M5 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L5 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T5 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M6 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L6 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T6 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M7 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L7 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T7 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M8 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L8 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T8 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M9 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L9 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T9 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M10 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L10 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T10 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M11 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L11 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T11 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M12 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L12 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T12 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M13 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L13 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T13 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M14 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L14 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T14 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M15 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L15 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T15 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M16 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L16 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T16 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M17 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L17 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T17 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style M18 fill:#ffe39b,stroke:#a67619,color:#1c2530,stroke-width:2px;
+    style L18 fill:#f5faff,stroke:#6b8ba5,color:#172c3c;
+    style T18 fill:#eee7ff,stroke:#8d70bc,color:#352449;
+    style START fill:#10324a,stroke:#32b8c6,color:#ffffff,stroke-width:2px;
+    style FINISH fill:#10324a,stroke:#32b8c6,color:#ffffff,stroke-width:2px;
 ```
 
 <a id="tool-directory"></a>
